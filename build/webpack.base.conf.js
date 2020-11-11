@@ -38,7 +38,7 @@ module.exports = {
 
   entry: {
     app: PATHS.src,
-    lk: `${PATHS.src}/lk.js`,
+    // lk: `${PATHS.src}/lk.js`,
   },
   output: {
     filename: `${PATHS.assets}js/[name].[hash].js`,
@@ -64,15 +64,15 @@ module.exports = {
         loader: 'babel-loader',
         exclude: '/node_modules/'
       },
-      {
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loader: {
-            scss: 'vue-style-loader!css-loader!sass-loader'
-          }
-        }
-      },
+      // {
+      //   test: /\.vue$/,
+      //   loader: 'vue-loader',
+      //   options: {
+      //     loader: {
+      //       scss: 'vue-style-loader!css-loader!sass-loader'
+      //     }
+      //   }
+      // },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader',
@@ -130,7 +130,7 @@ module.exports = {
     alias: {
       '~': PATHS.src,
       '@': PATHS.src,
-      'vue$': 'vue/dist/vue.js'
+      // 'vue$': 'vue/dist/vue.js'
     }
   },
   plugins: [
@@ -148,27 +148,27 @@ module.exports = {
       { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts`},
       { from: `${PATHS.src}/static`, to: ''},
     ]),
-    new VueLoaderPlugin(),
-    new FaviconsWebpackPlugin({
-      logo: `${PATHS.src}/static/favicon.png`,
-      outputPath: '/static/favicons',
-      cache: false,
-      prefix: 'static/favicons',
-      mode: 'webapp', // optional can be 'webapp' or 'light' - 'webapp' by default
-      devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default 
-      favicons: {
-        appName: 'My Site',
-        appDescription: 'My awesome App',
-        developerName: 'Alexander',
-        developerURL: null, // prevent retrieving from the nearest package.json
-        background: '#ddd',
-        theme_color: '#333',
-        icons: {
-          coast: false,
-          yandex: false
-        }
-      }
-    })
+    // new VueLoaderPlugin(),
+    // new FaviconsWebpackPlugin({
+    //   logo: `${PATHS.src}/static/favicon.png`,
+    //   outputPath: '/static/favicons',
+    //   cache: false,
+    //   prefix: 'static/favicons',
+    //   mode: 'webapp', // optional can be 'webapp' or 'light' - 'webapp' by default
+    //   devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default 
+    //   favicons: {
+    //     appName: 'My Site',
+    //     appDescription: 'My awesome App',
+    //     developerName: 'Alexander',
+    //     developerURL: null, // prevent retrieving from the nearest package.json
+    //     background: '#ddd',
+    //     theme_color: '#333',
+    //     icons: {
+    //       coast: false,
+    //       yandex: false
+    //     }
+    //   }
+    // })
   ]
   .concat(htmlPlugins)
 }
