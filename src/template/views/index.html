@@ -5,21 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
-  <title>Webpack</title>
+  <title>Инженерные системы</title>
 </head>
 <body>
   
   <div id="app">
 
-    <header></header>
+    <header class="header">
+
+      <div class="container">
+        <div class="search header__search">
+          <input type="text" class="search-input" placeholder="Поиск...">
+          <button type="submit" class="search-btn">
+            <img src="../../assets/img/search-icon.png" alt="Искать">
+          </button>
+        </div>
+        <!-- /.search header-search -->
+
+        <div class="contacts-block header__contacts-block">
+
+          <div class="contacts-block__tel tel">
+            <div class="contacts-block__tel-icon tel-icon">
+              <img src="../../assets/img/tel-icon.png" alt="Телефон">
+            </div>
+            <div class="contacts-block__tel-val tel-val">
+              <a href="tel:+74996734060" class="contacts-block__tel-link">+7 499 673 40 60</a>
+            </div>
+          </div>
+
+          <button class="contacts-block__btn btn btn-call">Обратный звонок</button>
+          
+          <div class="contacts-block__email email">
+            <div class="contacts-block__email-icon email-icon">
+              <img src="../../assets/img/email-icon.png" alt="EMail">
+            </div>
+            <a href="mailto:+74996734060" class="contacts-block__email-val email-val">info@engsystems.ru</a>
+          </div>
+        </div>
+        <!-- /.search header-search -->
+
+      
+      
+        <nav class="header__nav nav">
+          <div class="nav-logo">
+            <img src="../../assets/img/logo.png" alt="Logo">
+          </div>
+          <!-- /.menu-logo -->
+          <menu class="nav-menu menu">
+            <ul class="menu-ul">
+              <li class="menu-li"><a href="#">О компании</a></li>
+              <li class="menu-li"><a href="#">Оборудование</a></li>
+              <li class="menu-li"><a href="#">Услуги</a></li>
+              <li class="menu-li"><a href="#">Опросные листы</a></li>
+              <li class="menu-li"><a href="#">Контакты</a></li>
+            </ul>
+          </menu>
+          <!-- /.menu-list -->
+      </nav>
+      </div>
+      <!-- /.container -->
+    </header>
 
     <div class="wrapper">
 
       <section id="main"> 
         
       </section>
-
-      <example-component v-show="component"></example-component>
     
     </div>
     

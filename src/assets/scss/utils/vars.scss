@@ -10,6 +10,8 @@ $mainFontSize            : 18px;
 $mainFontWeight          : 400;
 $mainLineHeight          : 1.4;
 
+$maxWidth-desk           : 1140px;
+
 $desktopWidth            : 1280px;
 $smDesktopWidth          : 1024px;
 $tableWidth              : 768px;
@@ -24,11 +26,11 @@ $smPhoneWidth            : 320px;
 
 // Main color
 $default-color           : #ffffff;
-$primary-color           : #444ce0;
+$primary-color           : #113233; //
 $success-color           : #26de81;
 $danger-color            : #fc5c65;
-$warning-color           : #fed330;
-$light-color             : #999999;
+$warning-color           : #FFCD1B; //
+$light-color             : #365253; //
 $purple-color            : #8854d0;
 
 // Neutral Color

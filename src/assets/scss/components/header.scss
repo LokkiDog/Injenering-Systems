@@ -1,0 +1,88 @@
+.header {
+  background-color: $primary-color;
+  padding: 34px 0;
+  .container {
+    @include center($maxWidth-desk);
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+  }
+  &__contacts-block {
+    background: $light-color;
+    border-radius: 10px 10px 0px 0px;
+    padding: 12px 20px; 
+  }
+  &__nav {
+    width: 100%;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: -70px;
+  }
+}
+// ------------------------
+// ------- search ---------
+// ------------------------
+.search {
+  border: 2px solid $light-color;
+  border-radius: 4px;
+  color: $default-color;
+  position: relative;
+  &-input {
+    color: $default-color;
+    @include placeholder {
+      color: $light-color;
+    }
+  }
+  &-btn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: transparent;
+  }
+}
+
+// ------------------------
+// ---- contacts-block ----
+// ------------------------
+.contacts-block {
+  @include flex(row, space-between, center);
+  font-weight: 500;
+  &__btn {
+    margin-left: 20px;
+  }
+  &__email {
+    margin-left: 208px;
+  }
+}
+.tel {
+  @include flex(row, center, center);
+  &-icon {
+    margin-right: 8px;
+  }
+}
+.email {
+  @include flex(row, center, center);
+  &-icon {
+    margin-right: 8px;
+  }
+}
+
+
+
+// ------------------------
+// -------- NAV -----------
+// --------menu------------
+.nav {
+  @include flex(row, space-between, center);
+  @include link_a($light-color);
+  color: $light-color;
+  background: $default-color;
+  &-menu {
+    width: 72%;
+  }
+  
+}
+.menu {
+  &-ul {
+    @include flex(row, space-around, center);
+  }
+}

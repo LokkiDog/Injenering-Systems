@@ -49,7 +49,7 @@ h6 {
 a {
   text-decoration: none;
 }
-
+@include link_a;
 ul,
 li {
   margin: 0;
@@ -103,8 +103,9 @@ section,
   }
 }
 
-// Modules:
-// example: @import "modules/my-module.scss";
+// Components:
+@import "components/header.scss";
+@import "components/footer.scss";
 
 //Common
 @import "./common.scss";

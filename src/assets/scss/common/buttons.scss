@@ -1,10 +1,12 @@
 .btn {
   display: inline-block;
-  padding: .8em 2em;
+  padding: 8px 12px;
   line-height: 1;
-  text-transform: uppercase;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 10px;
+  border: 2px solid $warning-color;
+  background-color: transparent;
+  color: $default-color;
 
   // default btn
   &.btnDefaul {
