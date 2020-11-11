@@ -12,6 +12,9 @@
     padding: 12px 20px; 
   }
   &__nav {
+    @include link_a($light-color);
+    color: $light-color;
+    background: $default-color;
     width: 100%;
     padding: 15px 20px;
     position: absolute;
@@ -53,16 +56,13 @@
     margin-left: 208px;
   }
 }
-.tel {
-  @include flex(row, center, center);
-  &-icon {
-    margin-right: 8px;
-  }
-}
+.tel,
 .email {
   @include flex(row, center, center);
   &-icon {
+    @include flex(row, center, center);
     margin-right: 8px;
+    width: 30px;
   }
 }
 
@@ -73,9 +73,6 @@
 // --------menu------------
 .nav {
   @include flex(row, space-between, center);
-  @include link_a($light-color);
-  color: $light-color;
-  background: $default-color;
   &-menu {
     width: 72%;
   }

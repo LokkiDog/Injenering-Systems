@@ -1,0 +1,80 @@
+.footer {
+  background: $primary-color;
+  .container {
+    @include center($maxWidth-desk);
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+  }
+
+  &__nav {
+    
+    @include link_a($default-color);
+    color: $default-color;
+    background: $primary-color;
+    font-weight: 300;
+    width: 100%;
+    padding: 15px 0;
+  }
+  &-hr {
+    margin: 0;
+  }
+ 
+// ------------------------
+// ------- info ---------
+// ------------------------
+  &-info {
+    @include flex(row, space-between);
+    padding: 57px 0;
+    width: 100%;
+  }
+  &-search,
+  &-contacts,
+  &-address,
+  &-copyright {
+    @include flex(column, space-between, flex-start);
+    height: 136px;
+  }
+// ------------------------
+// ------contacts-block ---
+  &__contacts-block {
+    @include flex(column, space-between, flex-start);
+    .tel {
+      margin-bottom: 15px;
+    }
+    .btn { 
+      margin-left: 0;
+      margin-bottom: 30px;
+    }
+    .email {
+      margin-left: 0;
+    }
+  }
+}
+
+
+.address,
+.politics {
+  @include flex(row, center, flex-start);
+  &-icon {
+    @include flex(row, center, center);
+    margin-right: 8px;
+    width: 30px;
+  }
+} 
+
+// ------------------------
+// -------copyright--------
+// ------------------------
+.copyright {
+  &-rights {
+    @include link_a($default-color);
+    font-weight: 300;
+    font-size: rem(14);
+    color: $default-color;
+  }
+}
+.design-studio {
+  color: $success-color;
+  font-weight: 500;
+  font-size: rem(14);
+}
