@@ -158,9 +158,10 @@
   justify-content: $just;
 }
 
-@mixin link_a($color: $default-color, $hover_color: $color, $visited_color: $color) {
+@mixin link_a($color: $default-color, $font-weight: normal, $hover_color: $color, $visited_color: $color) {
   a {
     color: $color;
+    font-weight: $font-weight;
     &:visited {
       color: $visited_color;
     }

@@ -20,9 +20,98 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0;   
     right: 0;
     bottom: 0;
-    background-color: rgba(#233F3F, 0.6);
+    background-color: rgba($mainFontColor, 0.6);
+  }
+}
+
+/*
+----------------------
+-----catalog-menu-----
+----------------------
+*/
+
+.catalog-menu {
+  padding-top: 80px;
+
+  .title-block {
+    @include flex(row, space-between, flex-start);
+    flex-wrap: wrap;
+  }
+  &__title {
+    max-width: 390px;
+  }
+  &__text {
+    max-width: 615px;
+  }
+  &__more {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .items-block{
+    @include flex(row, space-between, flex-start);
+    margin-top: 18px;
+    flex-wrap: wrap;
+  }
+}
+
+.menu-card {
+  width: 263px;
+  margin-top: 42px;
+  @include link_a($mainFontColor, 700);
+  &-link {
+    &.menu-card-link--img{
+      width: 263px;
+      height: 263px;
+    }
+  }
+  .menu-card-img{
+    object-fit: contain;
+  }
+}
+
+
+/*
+----------------------
+-----services-menu-----
+----------------------
+*/
+.services-menu {
+  margin-top: 40px;
+  .container {
+    @include flex(row, space-between, flex-start);
+  }
+  &__title {
+    width: 262px;
+  }
+}
+
+.service-card {
+  @include link_a($mainFontColor, 700);
+  width: 262px;
+  height: 262px;
+  &-block {
+    @include flex(column, center, center);
+    border: 3px solid $mainFontColor;
+    box-sizing: border-box;
+    border-radius: 5px; 
+    padding: 26px 13px
+  }
+  &-image {
+    @include flex(column, center, center);
+    width: 140px;
+    height: 140px;
+  }
+  &-img {
+    object-fit: contain;
+  }
+  &-text {
+    margin-top: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: rem(16);
   }
 }

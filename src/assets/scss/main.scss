@@ -91,7 +91,7 @@ section,
   flex: 0 0 auto;
   position: relative;
   margin: 0 auto;
-  max-width: $desktopWidth;
+  max-width: $maxWidth-desk;
   @media screen and (max-width: $smDesktopWidth) {
     max-width: $tableWidth;
   }
@@ -102,7 +102,21 @@ section,
     max-width: $smPhoneWidth;
   }
 }
+.text { 
+  color: $mainFontColor;
+}
+.more {
+  @include link_a($success-color);
+  @include flex(row, flex-end, center);
 
+  color: $success-color;
+  &-link {
+    @include flex(row, center, center);
+  }
+  &-arrow {
+    margin-left: 8px;
+  }
+}
 // Components:
 @import "components/header.scss";
 @import "components/footer.scss";

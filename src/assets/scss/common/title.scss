@@ -3,6 +3,12 @@
   font-size: rem(67);
   color: $default-color;
   line-height: 100%;
+  &.title--h2 {
+    font-weight: 700;
+    font-size: rem(36);
+    line-height: 108%;
+    color: $mainFontColor;
+  }
 }
 
 .subtitle {
