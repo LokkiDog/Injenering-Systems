@@ -257,7 +257,54 @@
         </section>
         <!-- /.services-menu -->
 
-      
+        <section class="form-section form-section--index">
+          <div class="container">
+
+            <div class="form-block">
+
+              <h2 class="title title--h2 form-block__title">Оставить заявку</h2>
+              
+              <form action="" method="POST" class="form form-block__form">
+                <div class="form-block-inputs">
+                  <input class="input form__input" type="text" name="name" placeholder="Ваше имя">
+                  <input class="input form__input" type="tel" name="phone" placeholder="8 (888) 888-88-88">
+                  <input class="input form__input" type="email" name="email" placeholder="Электронный адрес">
+                </div>
+                <textarea class="textarea form__textarea form-block-textarea" type="text" name="comment" placeholder="Комментарий"></textarea>
+                <!-- /.form-block-inputs -->
+
+                <div class="form-block-controls">
+
+                  <label class="checkbox form-block-controls__checkbox">
+                    <input class="checkbox-input" type="checkbox">
+                    <span class="checkbox-text">
+                      Вы согласны на обработку персональных данных
+                    </span>
+                  </label>
+                  <!-- /.checkbox -->
+
+                  <div class="form-block-btns">
+
+                    <div class="form-block__btn-file btn-file">
+                      <input class="btn-file-btn" type="file" name="file" id="file" data-multiple-caption="Выбрано файлов: {count}" multiple />
+                      <label class="btn btn-success-trans btn-file-label" for="file">
+                        <span>Прикрепить файл</span>
+                      </label>
+                    </div>
+                    
+                    <input type="submit" class="btn btn-success form-block__btn" />
+                  </div>
+
+                </div>
+                <!-- /.form-block-btns --> 
+              </form>
+
+            </div>
+            <!-- /.form-block -->
+
+          </div>
+          <!-- /.container -->
+        </section>
 
     </main>
     
@@ -370,5 +417,6 @@
 
   </div>
   <!-- /.app -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -16,3 +16,32 @@ textarea {
 input, textarea {
   width: 100%;
 }
+
+.input,
+.textarea  {
+  padding: 13px 20px;
+  background: #FFFFFF;
+  border: 1px solid $neutral-placeholder;
+  box-sizing: border-box;
+  border-radius: 5px;
+  @include placeholder {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba($mainFontColor, 0.3);
+  }
+} 
+
+.checkbox {
+  @include flex(row, flex-start, flex-start);
+  &-input {
+    width: 14px;
+    margin-right: 8px;
+  }
+  &-text {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+    color: $neutral-placeholder;
+  }
+}

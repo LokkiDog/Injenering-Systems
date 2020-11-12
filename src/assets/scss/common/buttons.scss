@@ -24,12 +24,22 @@
 
   // primiry btn
   &.btn-success {
-    border: 1px solid #3a8d14;
-    background-color: #3a8d14;
+    border: 1px solid $success-color;
+    background-color: $success-color;
     border-radius: 5px;
     padding: 13px 44px;
     color: #ffffff;
     font-weight: 700;
+  }
+
+  &.btn-success-trans {
+    border: 1px solid $success-color;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 8px 24px;
+    color: $success-color;
+    font-weight: 500;
+    font-style: italic;
   }
 
   // danger btn

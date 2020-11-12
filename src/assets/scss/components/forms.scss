@@ -1,0 +1,77 @@
+.form-section {
+  &.form-section--index{
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+.form-block {
+  border: 1px solid $neutral-placeholder;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 24px;
+  @include flex(column, space-between, flex-start);
+  &__title {
+    width: 100%;
+  }
+  &__form {
+    width: 100%;
+    margin-top: 36px;
+  }
+  &-inputs {
+    @include flex(column, space-between, flex-start);
+    width: 49%;
+  }
+  &-controls{
+    width: 100%;
+    @include flex(row, space-between, center);
+    &__checkbox{
+      width: 49%;
+      margin-bottom: 0;
+    }
+  }
+  &-textarea {
+    width: 49%;
+    height: 200px;
+  }
+  &-btns {
+    width: 49%;
+    @include flex(row, space-between, center);
+  }
+  &__btn {
+    max-width: 217px;
+  }
+}
+
+.form {
+  @include flex(row, space-between, flex-start);
+  flex-wrap: wrap; 
+  &__input {
+    margin-bottom: 28px;
+  }
+}
+
+.btn-file {
+  &-btn {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  &-label {
+    margin-bottom: 0;
+  }
+}
+.btn-file-btn:focus + label,
+.btn-file-btn + label:hover {
+    color: $mainFontColor ;
+    border-color: $mainFontColor;
+}
+.btn-file-btn:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+.btn-file-btn + label * {
+	pointer-events: none;
+}
