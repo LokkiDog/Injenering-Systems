@@ -1,6 +1,13 @@
 .title {
-  margin-bottom: 20px;
-  color: #333333;
-  font-size: 30px;
   font-weight: 700;
+  font-size: rem(67);
+  color: $default-color;
+  line-height: 100%;
+}
+
+.subtitle {
+  font-weight: 500;
+  color: $default-color;
+  font-size: rem(32);
+  line-height: rem(37);
 }

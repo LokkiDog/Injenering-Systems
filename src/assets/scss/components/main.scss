@@ -1,0 +1,28 @@
+.main {
+  background: url('../img/main-img.png') 0% 0%;
+  .container {
+    @include center($maxWidth-desk);
+  }
+  &__title{
+    margin-top: 128px;
+  }
+  &__subtitle{
+    margin-top: 41px;
+    width: 70%;
+  }
+  &-button-wrapper{
+    margin-top: 52px;
+    margin-bottom: 203px;
+    width: 67%;
+    @include flex(row, flex-end, center);
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#233F3F, 0.6);
+  }
+}

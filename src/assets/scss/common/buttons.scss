@@ -23,10 +23,13 @@
   }
 
   // primiry btn
-  &.btnSuccess {
-    color: #ffffff;
+  &.btn-success {
     border: 1px solid #3a8d14;
     background-color: #3a8d14;
+    border-radius: 5px;
+    padding: 13px 44px;
+    color: #ffffff;
+    font-weight: 700;
   }
 
   // danger btn
