@@ -1,6 +1,4 @@
-.devices {
 
-}
 .partners {
   &__title {
     margin-top: 30px;
@@ -24,6 +22,134 @@
     @include flex(row, center, center);
     min-height: 50px;
   }
-  
+}
 
+// ------------------------
+// -----devices-menu-------
+// ------------------------
+
+.devices-menu {
+  @include link_a($mainFontColor, 700, $success-color);
+  &-row{
+    @include flex(row, space-between,center);
+    border-bottom: 1px solid rgba($neutral-placeholder, 0.5);
+    &:last-child{
+      border: none;
+    }
+    &:first-child{
+      border-bottom: 1px solid rgba($neutral-placeholder, 0.5);
+    }
+    
+    &.devices-menu-row--four {
+      .devices-menu-a {
+        width: 25%;
+      }
+    }
+  }
+  &-a {
+    display: block;
+    padding: 27px 0;
+    text-align: center;
+
+    border-right: 1px solid rgba($neutral-placeholder, 0.5);
+    &:last-child{
+      border: none;
+    }
+  }
+}
+
+// ------------------------
+// --------devices---------
+// ------------------------
+
+.devices {
+  &__title {
+    margin-top: 50px;
+  }
+  &__devices-menu {
+    margin-top: 50px;
+  }
+}
+// ------------------------
+// ------devices-items-----
+// ------------------------
+ 
+.devices-items {
+  margin-top: 200px;
+  background: $neutral-secondary;
+  &__title {
+    font-weight: 400 !important;
+  }
+  &-item {
+    @include flex(row, center, flex-start);
+    margin-top: 80px;
+   
+  }
+  &-info {
+    width: 50%;
+  }
+  &-image {
+    margin-left: 20px;
+    position: relative;
+    &:first-child {
+      &:before {
+        content: "";
+        position: absolute;
+        top: -124px;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+        height: 49%;
+        background-color:$neutral-secondary;
+        border-radius: 100%;
+      }
+    }
+    
+  }
+  &__table {
+    margin-top: 20px;
+  }
+}
+
+
+// ------------------------
+// -----questionnaire-----
+// ------------------------
+
+.questionnaire {
+  @include flex(row, space-between, center);
+  margin-top: 40px;
+  position: relative;
+  background: url('../img/bg-questionnaire.png') 0% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 15px;
+  padding: 26px 18px;
+
+  overflow: hidden;
+  & * {
+    position: relative;
+    z-index: 2;
+  }
+  &:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($success-color, 0.9);
+  }
+
+  &__title {
+    font-weight: 500 !important;
+    font-size: rem(28) !important;
+    line-height: rem(33) !important;
+  }
+  &__text {
+    margin-top: 13px;
+    color: $default-color;
+  }
 }

@@ -15,6 +15,9 @@
     line-height: 109.19%;
     color: $mainFontColor;
   }
+  &.title--white {
+    color: $default-color;
+  }
 }
 
 .subtitle {

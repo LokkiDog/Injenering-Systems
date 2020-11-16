@@ -141,6 +141,9 @@ section,
 }
 
 
+//Common
+@import "./common.scss";
+
 // Components:
 @import "components/header.scss";
 @import "components/footer.scss";
@@ -151,6 +154,3 @@ section,
 @import "components/steam.scss";
 @import "components/devices.scss";
 
-
-//Common
-@import "./common.scss";
