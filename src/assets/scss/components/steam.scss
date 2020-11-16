@@ -1,0 +1,61 @@
+.steam {
+  .box-wrapper{
+    @include flex(row, space-between, flex-start);
+  }
+  &__box{
+    min-height: 405px;
+    &:first-child{
+      width: 42%;
+    }
+    &:last-child{
+      width: 56%;
+      padding-left: 38px;
+      padding-right: 0;
+    }
+  }
+  &__text {
+    margin-bottom: 34px;
+  }
+  .box--dark{
+    margin-top: 5px;
+  }
+}
+
+
+
+.box {
+  padding: 50px 22px;
+  &-wrapper {
+    @include flex(row, space-between, flex-start);
+  }
+  &.box--light{
+    background:  rgba(196, 196, 196, 0.1);
+  }
+  &.box--dark{
+    background:  rgba(196, 196, 196, 0.3);
+  }
+  &.box--transperent{
+    background:  transparent;
+  }
+
+
+  &__title {
+    margin-bottom: 30px;
+  }
+}
+
+
+.lists {
+  &__box {
+    .ul {
+      padding-left: 16px;
+    }
+    &:first-child{
+      width: 60%;
+    }
+    &:last-child{
+      width: 30%;
+      margin-top: 26px;
+    }
+  }
+}

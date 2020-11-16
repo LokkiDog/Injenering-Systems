@@ -9,6 +9,12 @@
     line-height: 108%;
     color: $mainFontColor;
   }
+  &.title--h3 {
+    font-weight: 600;
+    font-size: rem(24);
+    line-height: 109.19%;
+    color: $mainFontColor;
+  }
 }
 
 .subtitle {

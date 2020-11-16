@@ -1,0 +1,29 @@
+.devices {
+
+}
+.partners {
+  &__title {
+    margin-top: 30px;
+  }
+  &__text {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+
+
+.img-links {
+  &-row {
+    margin-top: 60px;
+    width: 100%;
+    @include flex(row, space-between, center);
+    // flex-wrap: wrap;
+    
+  }
+  &-a{
+    @include flex(row, center, center);
+    min-height: 50px;
+  }
+  
+
+}

@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+document.addEventListener("DOMContentLoaded", function(){
 
 
 // Стилизация кнопки с файлом
@@ -30,6 +30,5 @@ $( document ).ready(function() {
         });
       });
 // ---------------------------
-
-
+ 
 });
