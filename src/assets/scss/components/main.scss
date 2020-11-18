@@ -100,6 +100,73 @@
       background-color: rgba($mainFontColor, 0.3);
     }
   }
+  &.main--deliver {
+    background: url('../img/bg-service-1.jpg') 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .main{
+      &__title{
+        margin-bottom: 15px;
+      }
+      &__text {
+        margin-bottom: 104px;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;   
+      right: 0;
+      bottom: 0;
+      background-color: rgba($mainFontColor, 0.3);
+    }
+  }
+  &.main--documentation {
+    background: url('../img/bg-service-2.jpg') 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .main{
+      &__title{
+        margin-bottom: 15px;
+      }
+      &__text {
+        margin-bottom: 104px;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;   
+      right: 0;
+      bottom: 0;
+      background-color: rgba($mainFontColor, 0.3);
+    }
+  }
+  &.main--mounting {
+    background: url('../img/bg-service-3.jpg') 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .main{
+      &__title{
+        margin-bottom: 15px;
+      }
+      &__text {
+        margin-bottom: 104px;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;   
+      right: 0;
+      bottom: 0;
+      background-color: rgba($mainFontColor, 0.3);
+    }
+  }
+  
 
 
 

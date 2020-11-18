@@ -105,6 +105,9 @@ section,
 }
 .text { 
   color: $mainFontColor;
+  &.text--white {
+    color: $default-color;
+  }
 }
 .more {
   @include link_a($success-color);
@@ -158,4 +161,5 @@ section,
 @import "components/drainage.scss";
 @import "components/oil.scss";
 @import "components/gas.scss";
+@import "components/services.scss"
 
