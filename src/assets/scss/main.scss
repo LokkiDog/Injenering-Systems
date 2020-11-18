@@ -10,6 +10,7 @@ html {
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
+  line-height: rem(21);
   @media screen and (max-width: $desktopWidth) {
     font-size: 16px;
   }
@@ -154,4 +155,5 @@ section,
 @import "components/steam.scss";
 @import "components/devices.scss";
 @import "components/drainage.scss";
+@import "components/oil.scss";
 
