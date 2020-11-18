@@ -32,9 +32,22 @@ table {
   &-td {
     font-size: rem(14);
     line-height: rem(16);
+    &.table-td--three {
+      position: relative;
+    }
   }
   &-th {
     font-style: italic;
+  }
+  &-th-top {
+    padding: 7px 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(18);
+    line-height: rem(21);
+    color: $mainFontColor;
+    background-color: #DCDFDF;
+
   }
   &-link {
     vertical-align: middle;
@@ -42,5 +55,17 @@ table {
     min-width: 172px;
     text-decoration: underline;
     font-size: rem(18);
+  }
+  &-text-right {
+    float: right;
+    line-height: 21px;
+  }
+  &-text-center{
+    width: 100%;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    line-height: 21px;
+    text-align: center;
   }
 }

@@ -1,0 +1,43 @@
+.drainage {
+  &-descr {
+    margin-top: 73px;
+    &.drainage-descr--bottom {
+      max-width: 53%;
+    }
+  }
+  &__table {
+    margin-top: 26px;
+    .table-td:not(:first-child) {
+      text-align: center;
+    }
+  }
+  &__devices-items {
+    .devices-items-item:last-child {
+      margin-bottom: 0;
+    }
+   .devices-items-image{
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -124px;
+      right: 0;
+      width: 100%;
+      z-index: -1;
+      height: 49%;
+      background-color:$neutral-secondary;
+      border-radius: 100%;
+    }
+   }
+
+  }
+}
+
+
+.example {
+  margin-top: 160px;
+  &-images{
+    margin-top: 28px;
+    @include flex(row, space-between);
+  }
+}
