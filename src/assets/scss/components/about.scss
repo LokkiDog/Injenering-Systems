@@ -1,0 +1,22 @@
+.about-us {
+  &-wrapper {
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+  }
+  &-item{
+    @include flex(row, flex-start, center);
+    width: 50%;
+    margin-top: 40px;
+  }
+  &-img{
+    height: 50px;
+    min-width: 50px;
+    @include flex(row, center, center);
+  }
+  &-text{
+    margin-left: 28px;
+    width: 100%;
+    max-width: 425px;
+  }
+
+}

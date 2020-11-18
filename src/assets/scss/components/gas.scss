@@ -1,0 +1,94 @@
+.gas {
+  &__title {
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  &__title--h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  &__ul {
+    margin-top: 10px;
+    margin-left: 26px;
+  }
+  &-double {
+    @include flex(row, space-between, flex-start);
+    margin-top: 40px;
+  }
+  &-image {
+    width: 39%;
+    @include flex(row, flex-end, flex-start);
+  } 
+ 
+  &__timeline {
+    margin-top: 50px;
+  }
+  &-grey {
+    background-color: #F1F1F1;
+    padding: 58px 40px;
+    width: 59%;
+    &:not(:first-child){
+      padding: 63px 40px;
+    }
+  }
+  &-tables {
+    @include flex(row, space-between, flex-start);
+  }
+  &__table {
+    .table-tr{
+      &:nth-child(n+1){
+        background-color: #fff;
+      }
+      &:nth-child(even) {
+        background-color:  #F1F1F1;   
+      }
+      &.table-tr--green {
+        background-color: rgba(67, 173, 72, 0.7);
+      }
+    }
+    &.gas__table--small{
+      width: 34%;
+      .table-item-name {
+        width: 33%;
+      }
+    }
+    &.gas__table--big{
+      width: 64%;
+    }
+  }
+}
+
+.timeline {
+  @include flex(row, space-between, flex-start);
+  &-item{
+    position: relative;
+  }
+  &-num {
+    @include flex(column, center, center);
+    position: relative;
+    z-index: 2;
+  }
+  &-num-val{
+    @include flex(row, center, center);
+    color: $default-color;
+    font-size: 36px;
+    width: 58px;
+    height: 58px;
+    background-color: #F1F1F1;
+    border-radius: 100%;
+  }
+  &-text{
+    font-size: rem(18);
+    margin-top: 20px;
+  }
+  
+  &-line{
+    position: absolute;
+    top: 30px;
+    left: 80%;
+    width: 230px;
+    height: 4px;
+    background-color:  #F1F1F1;
+    z-index: 0;
+  }
+}
