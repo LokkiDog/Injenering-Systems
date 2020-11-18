@@ -1,0 +1,45 @@
+.modal {
+  @include flex(row, center, center);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(#000000, 0.6);
+  &-wrapper {
+    @include flex(column, space-around, center);
+    position: relative;
+
+    max-width: 580px;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    height: 530px;
+    padding: 40px;
+  }
+  &__title {
+    margin-top: 30px;
+    color: $mainFontColor;
+    font-size: rem(36);
+  }
+  &__input {
+    margin-bottom: 28px;
+  }
+  &__btn{
+    width: 217px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .cross {
+    position: absolute;
+    top: 18px;
+    right: 34px;
+    font-size: 36px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.39, 0.58, 0.57, 1);
+    &:hover {
+      transform: rotate(180deg);
+      color: red;
+    }
+  }
+}
