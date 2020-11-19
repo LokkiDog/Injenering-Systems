@@ -39,7 +39,17 @@
     &:first-child{
       border-bottom: 1px solid rgba($neutral-placeholder, 0.5);
     }
-    
+    &.devices-menu-row--left {
+      .devices-menu-a {
+        text-align: left;
+        padding-left: 6%;
+      }
+    }
+    &.devices-menu-row--three {
+      .devices-menu-a {
+        width: 33%;
+      }
+    }
     &.devices-menu-row--four {
       .devices-menu-a {
         width: 25%;

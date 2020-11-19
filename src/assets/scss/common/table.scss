@@ -56,8 +56,9 @@ table {
 
   }
   &-link {
+    @include flex(column, center, center);
     vertical-align: middle;
-    padding: 32px;
+    // padding: 32px;
     min-width: 172px;
     text-decoration: underline;
     font-size: rem(18);

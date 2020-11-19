@@ -1,0 +1,70 @@
+.fittings {
+  &-descr {
+    margin-top: 80px;
+    @include flex(row, space-between, center);
+    &-text{
+      width: 75%;
+    }
+  }
+  &__table {
+    margin-top: 25px;
+    &.fittings__table--first {
+      .table-th-top {
+        background-color: #F1F1F1;
+        font-weight: 700;
+        font-style: italic;
+      }
+      .table-item-name {
+        white-space:  nowrap;
+        font-size: rem(18);
+        line-height: rem(21);
+        min-width: 105px;
+      }
+    }
+    &.fittings__table--second {
+      .table-th-top {
+        background-color: #F1F1F1;
+        font-weight: 700;
+        font-style: italic;
+      }
+      .table-item-name {
+        font-size: rem(18);
+        line-height: rem(21);
+        min-width: 105px;
+      }
+    }
+  }
+  &__devices-items {
+    .devices-items-item {
+      margin-bottom: 32px;
+    }
+    .devices-items-info {
+      width: 63%;
+    }
+    .devices-items-image {
+      margin-left: 100px;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -88px;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+        height: 39%;
+        background-color:$neutral-secondary;
+        border-radius: 100%;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -129px;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+        height: 44%;
+        background-color:$neutral-secondary;
+        border-radius: 100%;
+      }
+    }
+  }
+}

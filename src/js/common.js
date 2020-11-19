@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-
+/*
+------------------------------
 // Стилизация кнопки с файлом
+------------------------------
+*/
   var inputs = document.querySelectorAll('.btn-file-btn');
   Array.prototype.forEach.call(inputs, function(input){
     var label	 = input.nextElementSibling,
@@ -31,4 +34,15 @@ document.addEventListener("DOMContentLoaded", function(){
       });
 // ---------------------------
  
+
+/*
+------------------------------
+// Модальное окно
+------------------------------
+*/
+var btn = documnent.getElementsByClassName("btn-call");
+btn.addEventListener('click', function(e){
+  alert(123);
+});
+
 });

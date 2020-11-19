@@ -1,8 +1,9 @@
 .modal {
+  
   @include flex(row, center, center);
   position: fixed;
-  top: 0;
-  bottom: 0;
+  top: -1000;
+  bottom: 1000;
   left: 0;
   right: 0;
   background-color: rgba(#000000, 0.6);
