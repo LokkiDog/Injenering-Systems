@@ -45,16 +45,22 @@ document.addEventListener("DOMContentLoaded", function(){
       modal = document.getElementById('modal');
       cross = document.getElementById('cross');
       modalForm = document.getElementById('modalForm');
-
-  btns.forEach((btn) => btn.addEventListener(`click`, (event) => {
-    openModal();
-  }));
-  cross.addEventListener(`click`, (event) => {
-    closeModal();
-  });
-  modalForm.addEventListener(`submit`, (event) => {
-    closeModal();
-  });
+  
+  if(btns && modal) {
+    btns.forEach((btn) => btn.addEventListener(`click`, (event) => {
+      openModal();
+    }));
+  }
+  if(cross) {
+    cross.addEventListener(`click`, (event) => {
+      closeModal();
+    });
+  }
+  if(modal) {
+    modalForm.addEventListener(`submit`, (event) => {
+      closeModal();
+    });
+  }
 
   function openModal(){
     modal.style.bottom = 0;
@@ -64,5 +70,35 @@ document.addEventListener("DOMContentLoaded", function(){
     modal.style.bottom = '1000px';
     modal.style.top = '-1000px';
   }
+// ---------------------------
+
+/*
+------------------------------
+// Аккордеон
+------------------------------
+*/
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  // Плавное открытие/закрытие
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+          arrow = this.getElementsByTagName('span')[0];
+ 
+      if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        arrow.style.transform = 'rotate(0deg)';
+      } 
+    });
+  }
+  
+//----------------------------
+
+
 
 });
