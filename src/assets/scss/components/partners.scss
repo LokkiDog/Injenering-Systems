@@ -1,0 +1,23 @@
+.partners {
+  .partners__title {
+    margin-top: 100px;
+  }
+
+.img-links-a {
+  margin: 0;
+  &:not(:first-child),
+  &:not(:last-child) {
+    margin: auto;
+  }
+  &:first-child,
+  &:last-child{
+    margin-left: 0;
+  }  
+  
+  margin-top: 50px;
+}
+  .img-links-row--partners {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}

@@ -161,6 +161,52 @@
       background-color: rgba(#243F23, 0.3);
     }
   }
+  &.main--partners1 {
+    background: url('../img/bg-page-8.jpg') 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .main{
+      &__title{
+        font-size: rem(50);
+        margin-bottom: 30px;
+      }
+      &__text {
+        margin-bottom: 104px;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;   
+      right: 0;
+      bottom: 0;
+      background-color: rgba(#243F23, 0.3);
+    }
+  }
+  &.main--partners2 {
+    background: url('../img/bg-page-9.jpg') 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .main{
+      &__title{
+        font-size: rem(50);
+        margin-bottom: 30px;
+      }
+      &__text {
+        margin-bottom: 104px;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;   
+      right: 0;
+      bottom: 0;
+      background-color: rgba(#243F23, 0.3);
+    }
+  }
   &.main--deliver {
     background: url('../img/bg-service-1.jpg') 0% 100%;
     background-size: cover;
