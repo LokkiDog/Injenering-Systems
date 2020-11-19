@@ -31,6 +31,5 @@ const app = new Vue({
       component: false,
     }
   },
-  store,
   el: '#app'
 })

@@ -2,11 +2,12 @@
   
   @include flex(row, center, center);
   position: fixed;
-  top: -1000;
-  bottom: 1000;
+  top: -1000px;
+  bottom: 1000px;
   left: 0;
   right: 0;
   background-color: rgba(#000000, 0.6);
+  transition: all 0.3s;
   &-wrapper {
     @include flex(column, space-around, center);
     position: relative;

@@ -40,9 +40,29 @@ document.addEventListener("DOMContentLoaded", function(){
 // Модальное окно
 ------------------------------
 */
-var btn = documnent.getElementsByClassName("btn-call");
-btn.addEventListener('click', function(e){
-  alert(123);
-});
+  // Обрабатываем все кнопки с классом btn-call
+  var btns = document.querySelectorAll(".btn-call"); 
+      modal = document.getElementById('modal');
+      cross = document.getElementById('cross');
+      modalForm = document.getElementById('modalForm');
+
+  btns.forEach((btn) => btn.addEventListener(`click`, (event) => {
+    openModal();
+  }));
+  cross.addEventListener(`click`, (event) => {
+    closeModal();
+  });
+  modalForm.addEventListener(`submit`, (event) => {
+    closeModal();
+  });
+
+  function openModal(){
+    modal.style.bottom = 0;
+    modal.style.top = 0;
+  }
+  function closeModal(){
+    modal.style.bottom = '1000px';
+    modal.style.top = '-1000px';
+  }
 
 });
