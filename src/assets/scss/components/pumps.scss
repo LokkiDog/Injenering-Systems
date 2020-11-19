@@ -1,0 +1,49 @@
+.pumps {
+  &-descr {
+    margin-top: 60px;
+  }
+  &-types {
+    &-wrapper {
+      @include flex(row,space-between);
+    }
+    &__devices {
+      width: 68%;
+    }
+    &-questionnaire {
+      width: 30%;
+    }
+  }
+
+  &__devices-items {
+    .devices-items-item {
+      margin-bottom: 100px;
+    }
+    .devices-items-image {
+      &:before {
+        content: "";
+        position: absolute;
+        top: -88px;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+        height: 39%;
+        background-color:$neutral-secondary;
+        border-radius: 100%;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -200px;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+        height: 44%;
+        background-color:$neutral-secondary;
+        border-radius: 100%;
+      }
+    }
+  }
+  &__partners {
+    margin-top: 60px;
+  }
+}

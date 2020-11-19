@@ -15,10 +15,20 @@
   }
 
   // primiry btn
-  &.btnPrimary {
-    color: #ffffff;
-    border: 1px solid #494ce8;
-    background-color: #494ce8;
+  &.btn--main {
+    color: $mainFontColor;
+    border: 1px solid $mainFontColor;
+    background-color: $mainFontColor;
+  }
+  &.btn--main--trans {
+    border: 3px solid $mainFontColor;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 8px 24px;
+    color: $mainFontColor;
+    font-weight: 500;
+    font-style: italic;
+    white-space: nowrap;
   }
 
   // primiry btn

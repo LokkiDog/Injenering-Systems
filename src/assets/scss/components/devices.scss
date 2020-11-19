@@ -42,7 +42,13 @@
     &.devices-menu-row--left {
       .devices-menu-a {
         text-align: left;
-        padding-left: 6%;
+        padding-left: 3%;
+        padding-right: 25px;
+      }
+    }
+    &.devices-menu-row--two {
+      .devices-menu-a {
+        width: 50%;
       }
     }
     &.devices-menu-row--three {
@@ -159,5 +165,23 @@
   &__text {
     margin-top: 13px;
     color: $default-color;
+  }
+
+  &.questionnaire--yellow {
+    @include flex(column, space-between, flex-start);
+    .questionnaire {
+      &__title {
+        color: $mainFontColor;
+        line-height: rem(42) !important;
+        font-size: rem(36) !important;
+      }
+      &__btn {
+        margin-top: 120px;
+        align-self: flex-end;
+      }
+    }
+    &:after {
+      background-color: rgba($warning-color, 0.9);
+    }
   }
 }
