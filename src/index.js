@@ -1,11 +1,12 @@
 // import './js/slick.min.js'
 
 import './js/common'
+import './js/swiper-bundle.min'
 import './assets/css/main.css'
 import './assets/scss/main.scss'
 
 
-import 'vue'
+// import 'vue'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import Vue from'vue'
 // window.Vue = require('vue/dist/vue.js')
@@ -14,23 +15,24 @@ import 'vue'
 
 // Vue.component('example-component', require('./components/Example.vue').default)
 
-import Vue from 'vue'
-import VueAwesomeSwiper from 'vue-awesome-swiper'
+// import Vue from 'vue'
+// import VueAwesomeSwiper from 'vue-awesome-swiper'
 
-// import style (>= Swiper 6.x)
-import 'swiper/swiper-bundle.css'
+// import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+// // import style (>= Swiper 6.x)
+// import 'swiper/swiper-bundle.css'
 
-// import style (<= Swiper 5.x)
-// import 'swiper/css/swiper.css'
+// // import style (<= Swiper 5.x)
+// // import 'swiper/css/swiper.scss'
 
-Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 
-const app = new Vue({
-  data() {
-    return {
-      component: false,
-    }
-  },
-  VueAwesomeSwiper,
-  el: '#app'
-})
+// Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
+
+// const app = new Vue({
+//   data() {
+//     return {
+//       component: false, 
+//     }
+//   }, 
+//   el: '#app'
+// }) 

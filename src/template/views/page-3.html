@@ -361,35 +361,35 @@
             <h2 class="title title--h2 gallery__title">
               Галерея оборудования
             </h2>
-            <div class="slider-wrapper gallery__slider-wrapper"
-            >
-              <div id="steamSlider" class="slider">
-                <div class="slider-item">
-                  <img class="slider-img" src="assets/img/slider2-1.jpg" alt="Slide">
-                </div>
-                <div class="slider-item">
-                  <img class="slider-img" src="assets/img/slider2-2.jpg" alt="Slide">
-                </div>
-                <div class="slider-item">
-                  <img class="slider-img" src="assets/img/slider2-3.jpg" alt="Slide">
-                </div>
-                <div class="slider-item">
-                  <img class="slider-img" src="assets/img/slider2-2.jpg" alt="Slide">
-                </div>
+            <div class="slider-wrapper gallery__slider-wrapper">
+              <!-- Slider main container -->
+              
+              <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img class="slider-img" src="assets/img/slider2-1.jpg" alt="Slide">
+                    </div>
+                    <div class="swiper-slide ">
+                      <img class="slider-img" src="assets/img/slider2-2.jpg" alt="Slide">
+                    </div>
+                    <div class="swiper-slide ">
+                      <img class="slider-img" src="assets/img/slider2-1.jpg" alt="Slide">
+                    </div> 
+                </div> 
               </div>
-              <!-- /.slider -->
-
-              <!-- <div class="slider-arrows">
+              <!-- /.swiper-container -->
+              <div class="slider-arrows">
                 <div class="slider-left">
                   <img class="slider-arrow slider-arrow--left" src="assets/img/arrow-right.png" alt="Лево">
                 </div>
                 <div class="slider-right">
                   <img class="slider-arrow slider-arrow--right" src="assets/img/arrow-right.png" alt="Право">
                 </div>
-              </div> -->
-              <!-- /.slider-arrows -->
-              
+              </div>   
             </div>
+            <!-- /.slider-wrapper -->
           </div>
         </section>
         <!-- /.gallery -->
@@ -555,6 +555,33 @@
 
   </div>
   <!-- /.app -->
- 
+  <script type="module">
+    import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+  
+  
+    var mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      loop: true,
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      effect: 'coverflow',
+      centeredSlides: true,
+      slidesPerView: 3,
+      coverflow: {
+        rotate: 0,
+        stretch: 100,
+        depth: 150,
+        modifier: 1.5,
+        slideShadows : false,
+      }, 
+      // Navigation arrows
+      navigation: {
+        nextEl: '.slider-right',
+        prevEl: '.slider-left',
+      },
+   
+    }) 
+  
+  </script>
 </body>
 </html>

@@ -1,4 +1,7 @@
 .slider {
+  &-wrapper {
+    margin-top: 45px;
+  }
   &-arrow {
     cursor: pointer;
     filter: grayscale(100%);
