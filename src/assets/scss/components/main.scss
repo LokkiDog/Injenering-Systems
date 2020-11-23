@@ -300,9 +300,9 @@
 
 
 
-  .container {
-    @include center($maxWidth-desk);
-  }
+  // .container {
+  //   @include center($maxWidth-desk);
+  // }
   &__title{
     margin-top: 128px;
   }

@@ -98,8 +98,23 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   
 //----------------------------
+
+
+/*
+------------------------------
+// Мобильно меню
+------------------------------
+*/ 
+// Открытие закрытие
+  var burger = document.getElementById('burger');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle("active");
+    var menu = document.getElementById('mob-menu'); 
+    if (burger.classList.contains("active")){
+      menu.style.left = 0;
+    }else {
+      menu.style.left = '-100%';
+    }
+  }); 
+
 });
-
-
-
-
