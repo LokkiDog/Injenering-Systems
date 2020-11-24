@@ -95,6 +95,7 @@ section,
   max-width: $desktopWidth;
   @media screen and (max-width: $desktopWidth) {
     max-width: $tableWidth;
+    padding: 0 15px;
   }
   @media screen and (max-width: $tableWidth) {
     max-width: $phoneWidth;

@@ -20,22 +20,37 @@
   &-inputs {
     @include flex(column, space-between, flex-start);
     width: 49%;
+    @media (max-width: $desktopWidth){
+      width: 100%;
+    }
   }
   &-controls{
     width: 100%;
     @include flex(row, space-between, center);
+    @media (max-width: $desktopWidth){
+      margin-top: 30px;
+    }
     &__checkbox{
       width: 49%;
       margin-bottom: 0;
+      @media (max-width: $desktopWidth){
+         width: 40%;
+      }
     }
   }
   &-textarea {
     width: 49%;
     height: 200px;
+    @media (max-width: $desktopWidth){
+      width: 100%;
+    }
   }
   &-btns {
     width: 49%;
     @include flex(row, space-between, center);
+    @media (max-width: $desktopWidth){
+      width: 60%;
+    }
   }
   &__btn {
     max-width: 217px;
@@ -61,6 +76,10 @@
   }
   &-label {
     margin-bottom: 0;
+    @media (max-width: $desktopWidth){
+      font-size: rem(14);
+      white-space: nowrap;
+    }
   }
 }
 .btn-file-btn:focus + label,

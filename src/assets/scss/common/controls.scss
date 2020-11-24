@@ -43,5 +43,8 @@ input, textarea {
     font-size: 14px;
     line-height: 16px;
     color: $neutral-placeholder;
+    @media (max-width: $desktopWidth){
+      text-align: left;
+    }
   }
 }

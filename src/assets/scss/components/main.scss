@@ -309,6 +309,9 @@
   &__subtitle{
     margin-top: 41px;
     width: 70%;
+    @media (max-width: $desktopWidth){
+      width: 100%;
+    }
   }
   &-button-wrapper{
     margin-top: 52px;
@@ -339,22 +342,34 @@
   .title-block {
     @include flex(row, space-between, flex-start);
     flex-wrap: wrap;
+    @media (max-width: $desktopWidth){
+      @include flex(row, space-between, center);
+    }
   }
   &__title {
     max-width: 390px;
+    
   }
   &__text {
     max-width: 615px;
+    @media (max-width: $desktopWidth){
+      display: none;
+    }
   }
   &__more {
     width: 100%;
     margin-top: 20px;
+    @media (max-width: $desktopWidth){
+      width: 170px;
+      margin-top: 0;
+    }
   }
 
   .items-block{
     @include flex(row, space-between, flex-start);
     margin-top: 18px;
     flex-wrap: wrap;
+    
   }
 }
 
@@ -362,6 +377,9 @@
   width: 263px;
   margin-top: 42px;
   @include link_a($mainFontColor, 700);
+  @media (max-width: $desktopWidth){
+    width: 232px;
+  }
   &-link {
     &.menu-card-link--img{
       width: 263px;
@@ -383,9 +401,13 @@
   margin-top: 40px;
   .container {
     @include flex(row, space-between, flex-start);
+    flex-wrap: wrap;
   }
   &__title {
     width: 262px;
+    @media (max-width: $desktopWidth){
+      width: 100%;
+    }
   }
 }
 
@@ -393,6 +415,11 @@
   @include link_a($mainFontColor, 700);
   width: 262px;
   height: 262px;
+  @media (max-width: $desktopWidth){
+    width: 232px;
+    height: 232px;
+    margin-top: 37px;
+  }
   &-block {
     @include flex(column, center, center);
     border: 3px solid $mainFontColor;

@@ -1,7 +1,9 @@
 .footer {
   background: $primary-color;
-  .container {
-    @include center($maxWidth-desk);
+  @media (max-width: $desktopWidth){
+    display: none;
+  }
+  .container { 
     @include flex(row, space-between, center);
     flex-wrap: wrap;
   }
@@ -77,4 +79,67 @@
   color: $success-color;
   font-weight: 500;
   font-size: rem(14);
+}
+
+/*
+//----------------------
+//-----MOBILE-----------
+//----------------------
+*/
+.footer-mob {
+  display: none;
+  @media (max-width: $desktopWidth){
+    display: block;
+  }
+  .footer-address-item {
+    margin-bottom: 15px;
+    font-size: rem(16);
+  }
+  .contacts-block__email {
+    margin-left: 0;
+  } 
+  .design{
+   @include link_a($success-color);
+   margin-top: 88px;
+  }
+  .footer-copyright{
+    width: 33%;
+     
+    }
+  
+  .footer-menu{
+     width: 36%;
+    }
+  .footer-address{
+    width: 30%; 
+  } 
+  .nav-logo{
+    width: 73%;
+  }
+  .nav-menu {
+    width: 100%;
+  }
+  .politics {
+    @include flex(row, center, center);
+  }
+
+  
+}
+.footer {
+  &__menu {
+    
+    @include link_a(#fff);
+    font-weight: 300;
+    font-size: rem(18);
+    line-height: rem(21);
+    transition: all 0.3s;
+    .menu {
+      &-ul {
+        @include flex(column, flex-start, flex-start);
+      }
+      &-li {
+        margin: 10px 0;
+      }
+    }
+  }
 }

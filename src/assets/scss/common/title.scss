@@ -3,6 +3,9 @@
   font-size: rem(67);
   color: $default-color;
   line-height: 100%;
+  @media (max-width: $desktopWidth){
+    font-size: rem(44);
+  }
   &.title--h2 {
     font-weight: 700;
     font-size: rem(36);
@@ -31,4 +34,7 @@
   color: $default-color;
   font-size: rem(32);
   line-height: rem(37);
+  @media (max-width: $desktopWidth){
+    font-size: rem(24);
+  }
 }
