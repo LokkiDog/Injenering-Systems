@@ -76,6 +76,49 @@
       <!-- /.container -->
     </header>
 
+    <header class="header-mob"> 
+      <div class="container">
+        <div class="header-mob-logo">
+          <img src="assets/img/logo.png" alt="Logo">
+        </div>
+        <div class="burger-wrapper">
+          <div class="burger header-mob__burger" id="burger">
+            <input type="checkbox" />
+            <span id="burger-span1"></span>
+            <span id="burger-span2"></span>
+            <span id="burger-span3"></span>
+          </div>
+          <!-- /.burger header_mob__burger -->
+        </div> 
+      </div>
+      <!-- /.container -->
+
+
+      <nav class="header-mob__nav nav" id="mob-menu"> 
+        <div class="container">
+          <menu class="nav-menu menu" >
+            <ul class="menu-ul">
+              <li class="menu-li"><a href="#">О компании</a></li>
+              <li class="menu-li menu-dropdown">
+                <a href="#">Оборудование</a>
+              </li>
+              <li class="menu-li"><a href="#">Услуги</a></li>
+              <li class="menu-li"><a href="#">Опросные листы</a></li>
+              <li class="menu-li"><a href="#">Контакты</a></li>
+            </ul>
+            <!-- <ul class="menu-ul menu-ul-child">
+              <li class="menu-li menu-dropdown">Подраздел</li>
+              <li class="menu-li menu-dropdown">Подраздел</li>
+              <li class="menu-li menu-dropdown">Подраздел</li>
+            </ul> -->
+          </menu>
+          <!-- /.menu-list -->
+        </div>
+        <!-- /.container --> 
+      </nav>
+      <!-- /. nav-->
+    </header>
+
     <main class="wrapper">
 
       
@@ -398,7 +441,7 @@
             <div class="footer__contacts-block contacts-block">
               <div class="contacts-block__tel tel">
                 <div class="contacts-block__tel-icon tel-icon">
-                  <img src="assets/img/tel-icon.png" alt="Телефон">
+                  <img src="assets/img/tel-icon-footer.png" alt="Телефон">
                 </div>
                 <div class="contacts-block__tel-val tel-val">
                   <a href="tel:+74996734060" class="contacts-block__tel-link">+7 499 673 40 60</a>
@@ -409,7 +452,7 @@
               
               <div class="contacts-block__email email">
                 <div class="contacts-block__email-icon email-icon">
-                  <img src="assets/img/email-icon.png" alt="EMail">
+                  <img src="assets/img/email-icon-footer.png" alt="EMail">
                 </div>
                 <a href="mailto:info@engsystems.ru" class="contacts-block__email-val email-val">info@engsystems.ru</a>
               </div>
@@ -422,7 +465,7 @@
 
             <div class="contacts-block__address address">
               <div class="contacts-block__address-icon address-icon">
-                <img src="assets/img/address-logo.png" alt="Адрес">
+                <img src="assets/img/address-logo-footer.png" alt="Адрес">
               </div>
               <div class="contacts-block__address-val address-val">
                 <a href="tel:+74996734060" class="contacts-block__address-link">
@@ -433,7 +476,7 @@
             </div>
             <div class="contacts-block__politics politics">
               <div class="contacts-block__politics-icon politics-icon">
-                <img src="assets/img/politics-logo.png" alt="Политика конфиденциальности">
+                <img src="assets/img/politics-logo-footer.png" alt="Политика конфиденциальности">
               </div>
               <div class="contacts-block__politics-val politics-val">
                 <a href="#" class="contacts-block__politics-link">
@@ -457,7 +500,143 @@
         </div>
         <!-- /.footer-info -->
       </div>
+
+
+      <div class="modal" id="modal">
+        <div class="modal-wrapper">
+          <h3 class="title modal__title">Обратный звонок</h3>
+          <form action="" method="post" class="modal__form form" id="modalForm">
+            <input type="text" name="name" class="input modal__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="input modal__input" placeholder="8 (888) 888 88 88">
+            <input type="submit" class="btn btn-success modal__btn" value="Отправить">
+            
+          </form>
+          <div class="cross" id="cross">
+            &#10006;
+          </div>
+        </div>
+      </div>
+      <!-- /.modal -->
+
+
     </footer>
+    <!-- /.footer -->
+
+    <footer class="footer footer-mob"> 
+       
+      <div class="container">
+        <div class="footer-info"> 
+
+          <div class="footer-copyright copyright">
+            <div class="nav-logo">
+              <img src="assets/img/logo-white.png" alt="Logo">
+            </div>
+            <div class="copyright-rights">
+              © 2003–2020 
+              <a href="https://engsystems.ru" class="copyright-link">engsystems.ru</a> 
+            </div>
+            <!-- /.menu-logo -->
+            <div class="design">
+              <a href="https://just-studio.ru/" class="design-studio">
+                Design by Just Studio
+              </a>
+            </div>
+            
+            
+          </div>
+          <!-- /.footer-copyright -->
+
+          <div class="footer-menu">
+
+            <div class="footer__menu menu">
+              <menu class="nav-menu menu" >
+                <ul class="menu-ul">
+                  <li class="menu-li"><a href="#">О компании</a></li>
+                  <li class="menu-li menu-dropdown">
+                    <a href="#">Оборудование</a>
+                  </li>
+                  <li class="menu-li"><a href="#">Услуги</a></li>
+                  <li class="menu-li"><a href="#">Техническая документация</a></li>
+                  <li class="menu-li"><a href="#">Контакты</a></li>
+                </ul>
+                <!-- <ul class="menu-ul menu-ul-child">
+                  <li class="menu-li menu-dropdown">Подраздел</li>
+                  <li class="menu-li menu-dropdown">Подраздел</li>
+                  <li class="menu-li menu-dropdown">Подраздел</li>
+                </ul> -->
+              </menu>
+            </div>
+            <!-- /.search header-search --> 
+          </div>
+          <!-- /.footer-contacts --> 
+
+          <div class="footer-address">
+            <div class="contacts-block__tel tel footer-address-item">
+              <div class="contacts-block__tel-icon tel-icon">
+                <img src="assets/img/tel-icon-footer.png" alt="Телефон">
+              </div>
+              <div class="contacts-block__tel-val tel-val">
+                <a href="tel:+74996734060" class="contacts-block__tel-link">+7 499 673 40 60</a>
+              </div>
+            </div> 
+            <div class="contacts-block__address address footer-address-item">
+              <div class="contacts-block__address-icon address-icon">
+                <img src="assets/img/address-logo-footer.png" alt="Адрес">
+              </div>
+              <div class="contacts-block__address-val address-val">
+                <a href="tel:+74996734060" class="contacts-block__address-link">
+                  
+                  г. Москва, ул. Ижорская, 15
+                </a>
+              </div>
+            </div>
+            <div class="contacts-block__email email footer-address-item">
+              <div class="contacts-block__email-icon email-icon">
+                <img src="assets/img/email-icon-footer.png" alt="EMail">
+              </div>
+              <a href="mailto:info@engsystems.ru" class="contacts-block__email-val email-val">info@engsystems.ru</a>
+            </div>
+            <div class="contacts-block__politics politics footer-address-item">
+              <div class="contacts-block__politics-icon politics-icon">
+                <img src="assets/img/politics-logo-footer.png" alt="Политика конфиденциальности">
+              </div>
+              <div class="contacts-block__politics-val politics-val">
+                <a href="#" class="contacts-block__politics-link">
+                  Политика конфиденциальности
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.footer-address -->
+
+          
+        </div>
+        <!-- /.footer-info -->
+
+      </div>
+      <!-- /.container -->
+
+
+      <div class="modal" id="modal">
+        <div class="modal-wrapper">
+          <h3 class="title modal__title">Обратный звонок</h3>
+          <form action="" method="post" class="modal__form form" id="modalForm">
+            <input type="text" name="name" class="input modal__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="input modal__input" placeholder="8 (888) 888 88 88">
+            <input type="submit" class="btn btn-success modal__btn" value="Отправить">
+            
+          </form>
+          <div class="cross" id="cross">
+            &#10006;
+          </div>
+        </div>
+      </div>
+      <!-- /.modal -->
+
+
+    </footer>
+    <!-- /.footer-mob -->
 
   </div>
   <!-- /.app -->
