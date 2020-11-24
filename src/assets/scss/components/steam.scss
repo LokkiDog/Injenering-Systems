@@ -1,16 +1,40 @@
 .steam {
   .box-wrapper{
     @include flex(row, space-between, flex-start);
+    @media (max-width: $desktopWidth){
+      flex-wrap: wrap;
+    }
   }
   &__box{
     min-height: 405px;
+    
+    @media (max-width: $desktopWidth){
+      min-height: 0;
+    }
+    
     &:first-child{
       width: 42%;
+      
+      @media (max-width: $desktopWidth){
+        width: 100%;
+      }
     }
     &:last-child{
       width: 56%;
       padding-left: 38px;
       padding-right: 0;
+      
+      @media (max-width: $desktopWidth){
+        width: 100%;
+        padding-left: 0;
+        margin-top: 40px;
+      }
+
+    }
+    .ul {
+      @media (max-width: $desktopWidth){
+        padding-left: 38px;
+      }
     }
   }
   &__text {
@@ -25,14 +49,23 @@
 
 .box {
   padding: 50px 22px;
+  @media (max-width: $desktopWidth){
+    padding: 0;
+  }
   &-wrapper {
     @include flex(row, space-between, flex-start);
+    
   }
   &.box--light{
     background:  rgba(196, 196, 196, 0.1);
+    @media (max-width: $desktopWidth){
+      background: #fff;
+    }
   }
   &.box--dark{
+    padding: 50px 22px;
     background:  rgba(196, 196, 196, 0.3);
+    
   }
   &.box--transperent{
     background:  transparent;
@@ -47,6 +80,7 @@
 
 .lists {
   &__box {
+    
     .ul {
       padding-left: 16px;
     }
@@ -56,6 +90,11 @@
     &:last-child{
       width: 30%;
       margin-top: 26px;
+      @media (max-width: $desktopWidth){
+        margin-top: 46px;
+      }
+      
     }
+    
   }
 }

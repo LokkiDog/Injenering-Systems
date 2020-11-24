@@ -3,10 +3,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   
+  @media (max-width: $desktopWidth){
+    height: 680px;
+    display: flex;
+    align-items: center;
+  }
+  
+
   &.main--about {
     background: url('../img/bg-page-0.jpg') 0% 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-page-0-tablet.jpg') 0% 0% no-repeat ;
+      background-size: cover;
+    }
     .main{
       &__title{
         margin-bottom: 15px;
@@ -29,6 +40,10 @@
     background: url('../img/bg-page-1.jpg') 0% 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-page-1-tablet.jpg') 44% 0% no-repeat ;
+      background-size: cover;
+    }
     .main{
       &__title{
         margin-bottom: 120px;

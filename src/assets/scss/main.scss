@@ -142,6 +142,35 @@ section,
   }
 }
 
+.hide {
+  &-tablet {
+    display: block;
+    @media screen and (max-width: $desktopWidth) {
+      display: none;
+    }
+    @media screen and (max-width: $tableWidth) {
+      display: block;
+    } 
+    &.hide-mob {
+      @media screen and (max-width: $desktopWidth) {
+        display: none;
+      }
+      @media screen and (max-width: $tableWidth) {
+        display: none;
+      } 
+    }
+  }
+  &-mob {
+    display: block;
+    @media screen and (max-width: $desktopWidth) {
+      display: block;
+    }
+    @media screen and (max-width: $tableWidth) {
+      display: none;
+    } 
+  }
+  
+}
 
 //Common
 @import "./common.scss";
