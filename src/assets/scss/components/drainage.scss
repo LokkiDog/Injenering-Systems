@@ -3,6 +3,9 @@
     margin-top: 73px;
     &.drainage-descr--bottom {
       max-width: 53%;
+      @media (max-width: $desktopWidth){ 
+        max-width: 75%;
+      }
     }
   }
   &__table {
@@ -27,6 +30,9 @@
       height: 49%;
       background-color:$neutral-secondary;
       border-radius: 100%;
+      @media (max-width: $desktopWidth){ 
+        bottom: -224px;
+      }
     }
    }
 
@@ -39,5 +45,8 @@
   &-images{
     margin-top: 28px;
     @include flex(row, space-between);
+  }
+  &-img {
+    width: 50%;
   }
 }
