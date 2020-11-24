@@ -45,8 +45,15 @@
   &-images{
     margin-top: 28px;
     @include flex(row, space-between);
+    @media (max-width: $desktopWidth){
+      flex-wrap: wrap;
+    }
   }
   &-img {
     width: 50%;
+    @media (max-width: $desktopWidth){
+      width: 75%;
+      margin: auto;
+    }
   }
 }
