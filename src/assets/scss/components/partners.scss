@@ -5,13 +5,29 @@
 
 .img-links-a {
   margin: 0;
+  @media (max-width: $desktopWidth){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
   &:not(:first-child),
   &:not(:last-child) {
     margin: auto;
+    @media (max-width: $desktopWidth){
+      width: 33%; 
+    }
   }
   &:first-child,
   &:last-child{
     margin-left: 0;
+    margin-top: auto;
+    @media (max-width: $desktopWidth){ 
+      margin-bottom: 28px;
+      margin-top: 26px;
+      width: initial;
+    }
   }  
   
   margin-top: 50px;

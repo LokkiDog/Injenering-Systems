@@ -62,6 +62,10 @@ table {
     min-width: 172px;
     text-decoration: underline;
     font-size: rem(18);
+    @media (max-width: $desktopWidth){ 
+      min-width: auto;
+      white-space: nowrap;
+    }
   }
   &-text-right {
     float: right;

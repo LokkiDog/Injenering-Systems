@@ -30,6 +30,13 @@
 
 .devices-menu {
   @include link_a($mainFontColor, 700, $success-color);
+  &.devices-menu--tablet {
+    display: none;
+    @media (max-width: $desktopWidth){ 
+      display: block;
+      max-width: 80%; 
+    }
+  }
   &-row{
     @include flex(row, space-between,center);
     border-bottom: 1px solid rgba($neutral-placeholder, 0.5);
@@ -103,10 +110,17 @@
   }
   &-info {
     width: 50%;
+    @media (max-width: $desktopWidth){ 
+      width: 60%;
+    }
   }
   &-image {
     margin-left: 20px;
     position: relative;
+    @media (max-width: $desktopWidth){ 
+      margin-top: 60px;
+      width: 40%;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -117,6 +131,9 @@
       height: 49%;
       background-color:$neutral-secondary;
       border-radius: 100%;
+      @media (max-width: $desktopWidth){ 
+        top: -138px;
+      }
     }
     
   }
@@ -161,10 +178,20 @@
     font-weight: 500 !important;
     font-size: rem(28) !important;
     line-height: rem(33) !important;
+    @media (max-width: $desktopWidth){ 
+      font-weight: 400 !important;
+      font-size: rem(24) !important;
+      line-height: rem(28) !important;
+    }
   }
   &__text {
     margin-top: 13px;
     color: $default-color;
+    @media (max-width: $desktopWidth){ 
+      font-weight: 400 !important;
+      font-size: rem(16) !important;
+      line-height: rem(19) !important;
+    }
   }
 
   &.questionnaire--yellow {
@@ -178,6 +205,7 @@
       &__btn {
         margin-top: 120px;
         align-self: flex-end;
+        
       }
     }
     &:after {

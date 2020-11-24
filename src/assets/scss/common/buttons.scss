@@ -12,6 +12,9 @@
   &.btn--default {
     color: #ffffff;
     border: 2px solid #ffffff;
+    @media (max-width: $desktopWidth){ 
+      white-space: nowrap;
+    }
   }
 
   // primiry btn
