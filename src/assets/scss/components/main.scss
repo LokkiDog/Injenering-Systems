@@ -103,6 +103,10 @@
     background: url('../img/bg-page-4.jpg') 0% 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-page-4-tablet.jpg') 0% 0% no-repeat ;
+      background-size: cover;
+    }
     .main{
       &__title{
         margin-bottom: 120px;

@@ -13,9 +13,28 @@
   }
   &-double {
     @include flex(row, space-between, flex-start);
+    @media (max-width: $desktopWidth){ 
+      flex-wrap: wrap;
+    }
   }
   &-left,
   &-right {
     width: 49%;
+    @media (max-width: $desktopWidth){ 
+      width: 100%;
+    }
+  }
+  &-img {
+    @media (max-width: $desktopWidth){ 
+      width: 100%;
+    }
+    &-tablet {
+      display: none;
+      width: 100%;
+      margin-top: 15px;
+      @media (max-width: $desktopWidth){ 
+        display: block;
+      }
+    }
   }
 }
