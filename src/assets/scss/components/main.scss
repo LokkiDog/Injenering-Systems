@@ -204,6 +204,10 @@
     background: url('../img/bg-page-8.jpg') 0% 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-page-8-tablet.jpg') 0% 0% no-repeat ;
+      background-size: cover;
+    }
     .main{
       &__title{
         font-size: rem(50);
@@ -250,6 +254,10 @@
     background: url('../img/bg-page-9.jpg') 0% 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-page-9-tablet.jpg') 0% 0% no-repeat ;
+      background-size: cover;
+    }
     .main{
       &__title{
         font-size: rem(50);

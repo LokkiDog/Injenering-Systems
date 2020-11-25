@@ -1,6 +1,9 @@
 .partners {
   .partners__title {
     margin-top: 100px;
+    @media (max-width: $desktopWidth){
+      margin-top: 30px;
+    }
   }
 
 .img-links-a {
@@ -15,9 +18,9 @@
   &:not(:first-child),
   &:not(:last-child) {
     margin: auto;
-    @media (max-width: $desktopWidth){
-      width: 33%; 
-    }
+    // @media (max-width: $desktopWidth){
+    //   width: 33%; 
+    // }
   }
   &:first-child,
   &:last-child{
