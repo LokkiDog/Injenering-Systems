@@ -4,6 +4,32 @@
     @include flex(row, space-between, center);
     &-text{
       width: 75%;
+      @media (max-width: $desktopWidth){
+        width: 100%;
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+      }
+    }
+    &__text { 
+      &.fittings-descr__text--1 {
+        @media (max-width: $desktopWidth){
+          width: 69%; 
+        }
+      }
+      &.fittings-descr__text--2 {
+        @media (max-width: $desktopWidth){
+         margin-top: 20px;
+        }
+      }
+    }
+    &-logo {
+      &.fittings-descr-logo--tablet {
+        display: none;
+        width: 29%;
+        @media (max-width: $desktopWidth){
+          display: block;
+        }
+      }
     }
   }
   &__table {
@@ -40,9 +66,15 @@
     }
     .devices-items-info {
       width: 63%;
+      @media (max-width: $desktopWidth){
+        width: 77%;
+      }
     }
     .devices-items-image {
       margin-left: 100px;
+      @media (max-width: $desktopWidth){
+        margin-left: 15px;
+      }
       &:before {
         content: "";
         position: absolute;
@@ -53,6 +85,9 @@
         height: 39%;
         background-color:$neutral-secondary;
         border-radius: 100%;
+        @media (max-width: $desktopWidth){
+          top: -124px;
+        }
       }
       &:after {
         content: "";
