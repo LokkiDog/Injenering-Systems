@@ -176,6 +176,10 @@
     background: url('../img/bg-page-7.jpg') 0% 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-page-7-tablet.jpg') 0% 0% no-repeat ;
+      background-size: cover;
+    }
     .main{
       &__title{
         font-size: rem(50);
@@ -190,6 +194,10 @@
       right: 0;
       bottom: 0;
       background-color: rgba(#243F23, 0.3);
+      @media (max-width: $desktopWidth){
+        background: #233F3F;
+        opacity: 0.4;
+      }
     }
   }
   &.main--partners1 {

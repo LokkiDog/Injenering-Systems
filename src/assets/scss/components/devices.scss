@@ -37,6 +37,7 @@
       max-width: 80%; 
     }
   }
+  
   &-row{
     @include flex(row, space-between,center);
     border-bottom: 1px solid rgba($neutral-placeholder, 0.5);
@@ -162,6 +163,23 @@
   padding: 26px 18px;
 
   overflow: hidden;
+  &.questionnaire--tablet {
+    display: none;
+    @media (max-width: $desktopWidth){ 
+      display: flex;
+    }
+    .questionnaire__title {
+
+      font-size: rem(28) !important; 
+      line-height: rem(32) !important; 
+    }
+    .questionnaire__btn {
+      padding: 8px 34px;
+      font-style: italic; 
+      border-radius: 4px;
+    }
+    
+  }
   & * {
     position: relative;
     z-index: 2;

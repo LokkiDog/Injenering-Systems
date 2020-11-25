@@ -8,9 +8,15 @@
     }
     &__devices {
       width: 68%;
+      @media (max-width: $desktopWidth){
+        width: 100%;
+      }
     }
     &-questionnaire {
       width: 30%;
+      @media (max-width: $desktopWidth){
+        display: none;
+      }
     }
   }
 
