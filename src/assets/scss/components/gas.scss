@@ -2,6 +2,7 @@
   &__title {
     margin-top: 80px;
     margin-bottom: 20px;
+    
   }
   &__title--h3 {
     margin-top: 40px;
@@ -15,15 +16,34 @@
     @include flex(row, space-between, flex-start);
     margin-top: 40px;
     overflow: hidden;
+    @media (max-width: $desktopWidth){
+      flex-wrap: wrap;
+    }
+    &.gas-double--reverse {
+      @media (max-width: $desktopWidth){
+        flex-wrap: wrap-reverse;
+      }
+    }
+  }
+  &-img {
+    @media (max-width: $desktopWidth){
+      width: 100%;
+    }
   }
   &-left,
   &-right {
     padding-bottom: 99999px !important;
     margin-bottom: -99999px !important;
+    @media (max-width: $desktopWidth){
+      padding-bottom: 40px !important;
+      margin-bottom: 20px !important;
+      width: 100%;
+    }
   }
   &-image {
     width: 39%;
     @include flex(row, flex-end, flex-start);
+    
   } 
  
   &__timeline {
@@ -36,9 +56,15 @@
     &:not(:first-child){
       padding: 63px 40px;
     }
+    @media (max-width: $desktopWidth){
+      width: 100%;
+    }
   }
   &-tables {
     @include flex(row, space-between, flex-start);
+    @media (max-width: $desktopWidth){
+      flex-wrap: wrap;
+    }
   }
   &__table {
     .table-tr{
@@ -54,12 +80,19 @@
     }
     &.gas__table--small{
       width: 34%;
+      @media (max-width: $desktopWidth){
+        width: 100%;
+        margin-top: 28px;
+      }
       .table-item-name {
         width: 33%;
       }
     }
     &.gas__table--big{
       width: 64%;
+      @media (max-width: $desktopWidth){
+        width: 100%;
+      }
     }
   }
 }

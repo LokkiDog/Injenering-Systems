@@ -3,6 +3,11 @@
     @include flex(row, space-between, center);
     flex-wrap: wrap;
   }
+  &__title {
+    @media (max-width: $desktopWidth){
+      margin-top: 0;
+    }
+  }
   &-item{
     @include flex(row, flex-start, center);
     width: 50%;
