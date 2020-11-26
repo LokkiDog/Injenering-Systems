@@ -15,10 +15,16 @@
         @media (max-width: $desktopWidth){
           width: 69%; 
         }
+        @media   (max-width: $tableWidth) {
+          width: 100%;
+        }
       }
       &.fittings-descr__text--2 {
         @media (max-width: $desktopWidth){
          margin-top: 20px;
+        }
+        @media   (max-width: $tableWidth) {
+          margin-top: 30px;
         }
       }
     }
@@ -28,6 +34,10 @@
         width: 29%;
         @media (max-width: $desktopWidth){
           display: block;
+        }
+        @media   (max-width: $tableWidth) {
+          width: 95%;
+          margin-top: 30px;
         }
       }
     }
@@ -69,6 +79,10 @@
       @media (max-width: $desktopWidth){
         width: 77%;
       }
+      @media   (max-width: $tableWidth) {
+        width: 100%;
+      }
+      
     }
     .devices-items-image {
       margin-left: 100px;

@@ -12,12 +12,12 @@
     &.slider-arrow--left {
       transform: rotate(180deg);
       position: absolute;
-      left: calc(50% - 22px);
+      left: calc(50% - 40px);
       bottom: -30px;
     }
     &.slider-arrow--right { 
       position: absolute;
-      left: calc(50% + 22px);
+      right: calc(50% - 40px);
       bottom: -30px;
     }
 

@@ -13,6 +13,9 @@
     align-items: center;
     justify-content: center;
   }
+  @media   (max-width: $tableWidth) {
+    margin-top: 20px; 
+  }
   
   
   &:not(:first-child),
@@ -21,6 +24,9 @@
     // @media (max-width: $desktopWidth){
     //   width: 33%; 
     // }
+    @media   (max-width: $tableWidth) {
+      margin-top: 20px; 
+    }
   }
   &:first-child,
   &:last-child{
@@ -30,6 +36,10 @@
       margin-bottom: 28px;
       margin-top: 26px;
       width: initial;
+    }
+    @media   (max-width: $tableWidth) {
+      margin: auto; 
+      margin-top: 20px; 
     }
   }  
   

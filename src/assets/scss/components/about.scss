@@ -12,6 +12,9 @@
     @include flex(row, flex-start, center);
     width: 50%;
     margin-top: 40px;
+    @media (max-width: $tableWidth){
+      width: 100%;
+    }
   }
   &-img{
     height: 50px;

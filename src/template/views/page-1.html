@@ -271,7 +271,7 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide">
+                    <div class="swiper-slide ">
                       <img class="slider-img" src="assets/img/slider1-1.jpg" alt="Slide">
                     </div>
                     <div class="swiper-slide ">
@@ -630,14 +630,30 @@
 		paginationClickable: true,
 		effect: 'coverflow',
 		centeredSlides: true,
-		slidesPerView: 3,
+    slidesPerView: 3,
+    
 		coverflow: {
 			rotate: 0,
 			stretch: 100,
 			depth: 150,
 			modifier: 1.5,
 			slideShadows : false,
-		},
+    },
+    breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1, 
+    },
+    // when window width is >= 640px
+    768: {
+      slidesPerView: 3, 
+    }
+  },
 
     // If we need pagination
     pagination: {

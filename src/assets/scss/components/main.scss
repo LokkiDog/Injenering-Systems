@@ -8,6 +8,9 @@
     display: flex;
     align-items: center;
   }
+  @media (max-width: $tableWidth){
+    height: 480px;
+  }
   
 
   &.main--about {
@@ -133,6 +136,7 @@
     .main{
       &__title{
         margin-bottom: 120px;
+        font-size: 26px;
       }
     }
     &:before{
@@ -184,6 +188,9 @@
       &__title{
         font-size: rem(50);
         margin-bottom: 120px;
+        @media (max-width: $tableWidth) {
+          font-size: 36px;
+        }
       }
     }
     &:before{
@@ -365,6 +372,10 @@
     margin-bottom: 203px;
     width: 67%;
     @include flex(row, flex-end, center);
+    @media (max-width:$tableWidth ){
+      width: 100%;
+      @include flex(row, flex-start, center);
+    }
   }
   &:before{
     content: '';
@@ -410,6 +421,9 @@
       width: 170px;
       margin-top: 0;
     }
+    @media (max-width: $tableWidth){
+      display: none;
+    }
   }
 
   .items-block{
@@ -426,6 +440,9 @@
   @include link_a($mainFontColor, 700);
   @media (max-width: $desktopWidth){
     width: 232px;
+  }
+  @media (max-width: $tableWidth){
+    width: 49%;
   }
   &-link {
     &.menu-card-link--img{
@@ -466,6 +483,9 @@
     width: 232px;
     height: 232px;
     margin-top: 37px;
+  }
+  @media (max-width: $tableWidth){
+    width: 100%;
   }
   &-block {
     @include flex(column, center, center);

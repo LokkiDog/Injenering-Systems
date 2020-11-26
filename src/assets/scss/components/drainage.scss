@@ -6,6 +6,9 @@
       @media (max-width: $desktopWidth){ 
         max-width: 75%;
       }
+      @media   (max-width: $tableWidth) {
+        display: none;
+      }
     }
   }
   &__table {
@@ -42,6 +45,9 @@
 
 .example {
   margin-top: 160px;
+  @media   (max-width: $tableWidth) {
+    margin-top: 20px;
+  }
   &-images{
     margin-top: 28px;
     @include flex(row, space-between);
@@ -54,6 +60,9 @@
     @media (max-width: $desktopWidth){
       width: 75%;
       margin: auto;
+    }
+    @media   (max-width: $tableWidth) {
+      width: 95%;
     }
   }
 }

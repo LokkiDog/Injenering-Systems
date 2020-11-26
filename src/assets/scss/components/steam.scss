@@ -3,7 +3,7 @@
     @include flex(row, space-between, flex-start);
     @media (max-width: $desktopWidth){
       flex-wrap: wrap;
-    }
+    } 
   }
   &__box{
     min-height: 405px;
@@ -54,7 +54,9 @@
   }
   &-wrapper {
     @include flex(row, space-between, flex-start);
-    
+    @media (max-width: $tableWidth){
+      flex-wrap: wrap;
+    }
   }
   &.box--light{
     background:  rgba(196, 196, 196, 0.1);
@@ -86,12 +88,18 @@
     }
     &:first-child{
       width: 60%;
+      @media (max-width: $tableWidth){
+        width: 100%;
+      }
     }
     &:last-child{
       width: 30%;
       margin-top: 26px;
       @media (max-width: $desktopWidth){
         margin-top: 46px;
+      }
+      @media (max-width: $tableWidth){
+        width: 100%;
       }
       
     }

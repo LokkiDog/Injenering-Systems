@@ -39,6 +39,9 @@
     background: rgba(190, 190, 190, 0.2);
     padding: 9px 35px;
     margin-bottom: 2px;
+    @media   (max-width: $tableWidth) {
+      padding: 9px 4px;
+    }
     &:last-child{
       border-bottom-left-radius: 3px;    
       border-bottom-right-radius: 3px;    
@@ -48,6 +51,10 @@
     font-size: rem(18);
     line-height: rem(21);
     width: 25%;
+    @media   (max-width: $tableWidth) {
+      width: 35%;
+      font-size: rem(16);
+    }
   }
   &-text {
     text-align: left;
@@ -59,5 +66,9 @@
     width: 110px;
     font-size: rem(18);
     font-style: italic;
+    @media   (max-width: $tableWidth) {
+      width: 35%;
+      font-size: rem(16);
+    }
   }
 }

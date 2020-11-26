@@ -67,8 +67,8 @@ document.addEventListener("DOMContentLoaded", function(){
     modal.style.top = 0;
   }
   function closeModal(){
-    modal.style.bottom = '1000px';
-    modal.style.top = '-1000px';
+    modal.style.bottom = '10000px';
+    modal.style.top = '-10000px';
   }
 // ---------------------------
 

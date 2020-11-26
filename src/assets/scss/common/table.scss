@@ -12,9 +12,15 @@ table {
     @media (max-width: $desktopWidth){  
       padding: 7px 6px;
     }
+    @media   (max-width: $tableWidth) {
+      white-space: normal; 
+    }
   }
   td {
     padding: 12px 14px;
+    @media   (max-width: $tableWidth) {
+      padding: 12px 2px;
+    }
   }
   tbody tr:nth-child(n+1) {
     background-color: #F1F1F1;   
@@ -31,6 +37,9 @@ table {
   &-item-name {
     min-width: 160px;
     line-height: rem(21);
+    @media   (max-width: $tableWidth) {
+      min-width: auto;
+    }
   }
   &-td {
     font-size: rem(14);
@@ -41,6 +50,9 @@ table {
   }
   &-th {
     font-style: italic;
+    @media   (max-width: $tableWidth) {
+     font-size: 14px;
+    }
   }
   &-tr {
     &.table-tr--green {
@@ -68,6 +80,9 @@ table {
     @media (max-width: $desktopWidth){ 
       min-width: auto;
       white-space: nowrap;
+    }
+    @media   (max-width: $tableWidth) {
+     font-size: 12px;
     }
   }
   &-text-right {

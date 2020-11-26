@@ -55,10 +55,18 @@
     width: 59%;
     &:not(:first-child){
       padding: 63px 40px;
+      @media   (max-width: $tableWidth) {
+        padding: 0;
+        background-color: #fff;
+       }
     }
     @media (max-width: $desktopWidth){
       width: 100%;
     }
+    @media   (max-width: $tableWidth) {
+      padding: 0;
+      background-color: #fff;
+     }
   }
   &-tables {
     @include flex(row, space-between, flex-start);
@@ -99,13 +107,23 @@
 
 .timeline {
   @include flex(row, space-between, flex-start);
+  @media   (max-width: $tableWidth) {
+    @include flex(column, center, center);
+  }
   &-item{
     position: relative;
+    @media   (max-width: $tableWidth) {
+      margin-bottom: 30px;
+    }
+    
   }
   &-num {
     @include flex(column, center, center);
     position: relative;
     z-index: 2;
+    @media   (max-width: $tableWidth) {
+      @include flex(row, center, center);
+    }
   }
   &-num-val{
     @include flex(row, center, center);
@@ -119,6 +137,12 @@
   &-text{
     font-size: rem(18);
     margin-top: 20px;
+    @media   (max-width: $tableWidth) {
+      margin-top: 0;
+      margin-left: 20px;
+      margin-right: -50px;
+      width: 118px;
+    }
   }
   
   &-line{
@@ -129,5 +153,11 @@
     height: 4px;
     background-color:  #F1F1F1;
     z-index: 0;
+    @media   (max-width: $tableWidth) {
+      top: 50px;
+      left: 17%;
+      width: 4px;
+      height: 50px;
+    }
   }
 }
