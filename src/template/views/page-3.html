@@ -740,21 +740,23 @@
   
   
     var mySwiper = new Swiper('.swiper-container', {
-      // Optional parameters
-      loop: true,
-      pagination: '.swiper-pagination',
-      paginationClickable: true,
-      effect: 'coverflow',
-      centeredSlides: true,
-      slidesPerView: 3,
-      coverflow: {
-        rotate: 0,
-        stretch: 100,
-        depth: 150,
-        modifier: 1.5,
-        slideShadows : false,
-      }, 
-      breakpoints: {
+       // Optional parameters
+        loop: true,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        // effect: 'coverflow',
+        centeredSlides: true,
+        slidesPerView: 3,
+        spaceBetween: 20,
+        
+        // coverflow: {
+        // 	rotate: 0,
+        // 	stretch: 100,
+        // 	depth: 150,
+        // 	modifier: 1.5,
+        // 	slideShadows : false,
+        // },
+        breakpoints: {
         // when window width is >= 320px
         320: {
           slidesPerView: 1,

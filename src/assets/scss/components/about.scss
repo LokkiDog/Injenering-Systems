@@ -24,7 +24,11 @@
   &-text{
     margin-left: 28px;
     width: 100%;
-    max-width: 425px;
+    // max-width: 425px;
+    @media (max-width: $desktopWidth){
+      margin-left: 14px;
+
+    }
   }
 
 }

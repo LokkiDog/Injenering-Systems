@@ -31,6 +31,16 @@ body {
   font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    line-height: 20px;
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
 }
 
 *,
@@ -134,7 +144,7 @@ section,
       content: '';
       position: absolute;
       left: -15px;
-      top: 12px;
+      top: 8px;
       width: 5px;
       height: 5px;
       border-radius: 5px;
@@ -170,7 +180,11 @@ section,
       display: none;
     } 
   }
-  
+  &-desktop{
+    @media screen and (min-width: $desktopWidth) {
+      display: none;
+    }
+  }
 }
 
 //Common

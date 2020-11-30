@@ -6,6 +6,13 @@ import './assets/css/main.css'
 import './assets/scss/main.scss'
 
 
+import $ from 'jquery';
+ 
+global.jQuery = $;
+global.$ = $;
+
+
+
 // import 'vue'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import Vue from'vue'
