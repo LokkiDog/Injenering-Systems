@@ -67,7 +67,9 @@
   &.box--dark{
     padding: 50px 22px;
     background:  rgba(196, 196, 196, 0.3);
-    
+    @media (max-width: $desktopWidth){
+      padding: 30px 16px;
+    }
   }
   &.box--transperent{
     background:  transparent;
@@ -96,7 +98,7 @@
       width: 30%;
       margin-top: 26px;
       @media (max-width: $desktopWidth){
-        margin-top: 46px;
+        margin-top: 40px;
       }
       @media (max-width: $tableWidth){
         width: 100%;

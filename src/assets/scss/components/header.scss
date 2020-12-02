@@ -99,6 +99,18 @@
   @media (max-width: $desktopWidth){
     display: block;
   }
+  
+  @media (max-width: $tableWidth){
+    padding: 24px 0;
+  }
+  &-logo {
+    @media (max-width: $desktopWidth){
+      max-width: 191px;
+    } 
+    @media (max-width: $tableWidth){
+      max-width: 145px;
+    } 
+  }
   .container { 
     @include flex(row, space-between, center);
     flex-wrap: wrap;

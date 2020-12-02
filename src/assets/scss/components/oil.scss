@@ -1,7 +1,17 @@
 .oil {
   &__title {
-    margin-top: 80px;
     margin-bottom: 20px;
+    margin-top: 60px;
+    
+    &.oil__title--first { 
+      margin-top: 80px;
+      @media (max-width: $desktopWidth){
+        margin-top: 40px;
+      }
+      @media (max-width: $desktopWidth){
+        margin-top: 8px;
+      }
+    }
   }
   &__title--h3 {
     margin-top: 40px;

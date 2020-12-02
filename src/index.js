@@ -1,7 +1,6 @@
 // import './js/slick.min.js'
 
-import './js/common'
-import './js/swiper-bundle.min'
+import './js/common' 
 import './assets/css/main.css'
 import './assets/scss/main.scss'
 
@@ -10,8 +9,10 @@ import $ from 'jquery';
  
 global.jQuery = $;
 global.$ = $;
+ 
+import 'swiper'; 
 
-
+import 'swiper/swiper-bundle.css';
 
 // import 'vue'
 // import 'bootstrap/dist/css/bootstrap.min.css'

@@ -1,6 +1,9 @@
 .slider {
   &-wrapper {
     margin-top: 45px;
+    @media (max-width: $tableWidth){
+      margin-top: 15px;
+    } 
   }
   &-arrow {
     cursor: pointer;
@@ -25,4 +28,9 @@
   &-img {
     object-fit: cover;
   }
+}
+.gallery { 
+  @media (max-width: $tableWidth){
+    margin-top: 20px;
+  } 
 }

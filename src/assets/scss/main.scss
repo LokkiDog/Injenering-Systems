@@ -161,7 +161,7 @@ section,
     }
     @media screen and (max-width: $tableWidth) {
       display: block;
-    } 
+    }  
     &.hide-mob {
       @media screen and (max-width: $desktopWidth) {
         display: none;
@@ -169,6 +169,14 @@ section,
       @media screen and (max-width: $tableWidth) {
         display: none;
       } 
+    }
+    &.hide-mob500 {
+      @media screen and (max-width: $desktopWidth) {
+        display: none;
+      }
+      @media screen and (max-width: $tableWidth) {
+        display: none;
+      }  
     }
   }
   &-mob {
@@ -178,15 +186,14 @@ section,
     }
     @media screen and (max-width: $tableWidth) {
       display: none;
-    } 
-  }
+    }  
+  } 
   &-desktop{
     @media screen and (min-width: $desktopWidth) {
       display: none;
     }
   }
-}
-
+} 
 //Common
 @import "./common.scss";
 

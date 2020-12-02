@@ -12,7 +12,24 @@
     height: 480px;
   }
   
+  &.main--index {
+    @media (max-width: $desktopWidth){
+      background: url('../img/main-img.png') 71% 0% no-repeat ;
+      background-size: cover; 
 
+      height: 780px;
+    }
+    .main{
+      &__title{
+        @media (max-width: $tableWidth){
+          margin-top: 180px;
+        }
+      }
+      &-button-wrapper{
+        margin-bottom: 200px;
+      }
+    }
+  }
   &.main--about {
     background: url('../img/bg-page-0.jpg') 0% 100%;
     background-size: cover;
@@ -86,6 +103,10 @@
     background: url('../img/bg-page-3.jpg') 0% 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-page-3-tablet.jpg') 44% 100% no-repeat ;
+      background-size: cover;
+    }
     .main{
       &__title{
         margin-bottom: 120px;
@@ -113,6 +134,9 @@
     .main{
       &__title{
         margin-bottom: 120px;
+        @media (max-width: 350px){
+          font-size: 34px;
+        }
       }
     }
     &:before{
@@ -310,6 +334,10 @@
     background: url('../img/bg-service-2.jpg') 0% 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-service-2-tablet.jpg') 0% 100% no-repeat ;
+      background-size: cover;
+    }
     .main{
       &__title{
         margin-bottom: 15px;
@@ -332,6 +360,10 @@
     background: url('../img/bg-service-3.jpg') 0% 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-service-3-tablet.jpg') 0% 100% no-repeat ;
+      background-size: cover;
+    }
     .main{
       &__title{
         margin-bottom: 15px;
