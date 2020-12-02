@@ -7,6 +7,23 @@
     margin-top: 30px;
     width: 100%;
   }
+  @media (min-width: $tableWidth) and (max-width: $desktopWidth){ 
+    .partners__img-links--table > .img-links-row {
+      &:first-child {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+      &:last-child {
+        justify-content: space-around;
+        flex-wrap: nowrap;
+
+      }
+      a {
+        margin: auto;
+      }
+    }
+  }
+  
 }
 
 
@@ -145,7 +162,7 @@
     position: relative;
     @media (max-width: $desktopWidth){ 
       margin-top: 34px;
-      width: 35%;
+      width: 33%;
     } 
     @media (max-width: $tableWidth) {
       width: 80%;

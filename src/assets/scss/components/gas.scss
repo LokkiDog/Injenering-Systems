@@ -17,7 +17,11 @@
     margin-top: 40px;
     overflow: hidden;
     @media (max-width: $desktopWidth){
-      flex-wrap: wrap;
+      flex-wrap: wrap; 
+      margin-top: 20px; 
+    }
+    @media (max-width: $tableWidth){  
+      margin-top: 0; 
     }
     &.gas-double--reverse {
       @media (max-width: $desktopWidth){
@@ -153,6 +157,9 @@
     height: 4px;
     background-color:  #F1F1F1;
     z-index: 0;
+    @media   (max-width: $desktopWidth) { 
+      width: 150px;
+    }
     @media   (max-width: $tableWidth) {
       top: 50px;
       left: 17%;

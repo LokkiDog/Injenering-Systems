@@ -8,6 +8,9 @@ input {
   padding: 6px 20px;
   border-radius: 4px;
   background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 textarea {
   padding: 30px 27px;

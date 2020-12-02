@@ -43,6 +43,10 @@
     color: #ffffff;
     font-weight: 700;
     letter-spacing: 2px;
+    @media (max-width: $desktopWidth){ 
+      font-size: 18px;
+      letter-spacing: 1.1px;
+    }
   }
 
   &.btn-success-trans {

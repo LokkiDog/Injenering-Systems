@@ -149,6 +149,12 @@ section,
       height: 5px;
       border-radius: 5px;
       background-color: $mainFontColor;
+      @media (max-width: $desktopWidth){
+        top: 6px;
+       }
+       @media (max-width: $tableWidth){
+        top: 8px;
+      }
     }
   }
 }
