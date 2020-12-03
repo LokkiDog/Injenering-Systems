@@ -1,0 +1,59 @@
+.page-404 {
+  @include flex(column, center, center);
+  
+  height: 100vh;
+  &__title {
+    font-size: 60px;
+    line-height: 64px; 
+    letter-spacing: 0.1em; 
+    text-align: center;
+    @media   (max-width: $tableWidth) {
+      font-size: 50px;
+      line-height: 54px; 
+      letter-spacing: 0.08em; 
+    }
+    @media   (max-width: $phoneWidth) {
+      font-size: 40px;
+      line-height: 44px;  
+    }
+  }
+  .btn {
+    margin-top: 40px;
+    border-radius: 3px;
+    padding: 10px 32px;
+  }
+}
+.wrapper {
+  &.wrapper--p404 {
+    background-color: $success-color;
+    position: relative;
+    .p404-bg {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      font-size: 700px;
+      font-weight: 900;
+      opacity: 0.1;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media   (max-width: $desktopWidth) {
+        font-size: 450px;
+      }
+      @media   (max-width: $tableWidth) {
+        font-size: 300px;
+      }
+      @media   (max-width: $phoneWidth) {
+        font-size: 160px;
+        padding-top: 25px;
+        top: 54px;
+        align-items: flex-start;
+      }
+      
+    }
+  }
+}

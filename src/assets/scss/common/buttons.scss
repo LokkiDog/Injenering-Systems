@@ -66,8 +66,8 @@
     background-color: #b53f3f;
   }
 
-  &.btnWhite {
-    color: #333333;
+  &.btn--white{
+    color: $success-color;
     border: 1px solid #ffffff;
     background-color: #ffffff;
   }
