@@ -6,7 +6,7 @@
     } 
   }
   &__box{
-    min-height: 405px;
+    min-height: 375px;
     
     @media (max-width: $desktopWidth){
       min-height: 0;
@@ -33,7 +33,7 @@
     }
     .ul {
       @media (max-width: $desktopWidth){
-        padding-left: 38px;
+        padding-left: 38px; 
       }
     }
   }
@@ -41,7 +41,7 @@
     margin-bottom: 34px;
   }
   .box--dark{
-    margin-top: 5px;
+    margin-top: 20px;
   }
 }
 

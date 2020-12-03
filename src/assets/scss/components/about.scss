@@ -21,6 +21,10 @@
     min-width: 50px;
     @include flex(row, center, center);
   }
+  &-image {
+    width: auto;
+    height: 100%;
+  }
   &-text{
     margin-left: 28px;
     width: 100%;

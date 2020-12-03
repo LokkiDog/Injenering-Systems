@@ -56,7 +56,7 @@
 
 .address,
 .politics {
-  @include flex(row, center, flex-start);
+  @include flex(row, center, center);
   &-icon {
     @include flex(row, center, center);
     margin-right: 8px;
