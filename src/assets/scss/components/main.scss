@@ -13,7 +13,8 @@
   }
   
   &.main--index {
-    
+    background: url('../img/bg-page-index.jpg') 0% 0% no-repeat ;
+    background-size: cover; 
     padding: 0;
     @media (max-width: $desktopWidth){
       background: url('../img/bg-page-index.jpg') 71% 0% no-repeat ;
