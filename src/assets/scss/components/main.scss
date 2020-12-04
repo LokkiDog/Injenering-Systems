@@ -1,5 +1,5 @@
 .main {
-  background: url('../img/main-img.png') 0% 0%;
+  
   background-size: cover;
   background-repeat: no-repeat;
   
@@ -13,11 +13,15 @@
   }
   
   &.main--index {
+    
+    padding: 0;
     @media (max-width: $desktopWidth){
-      background: url('../img/main-img.png') 71% 0% no-repeat ;
+      background: url('../img/bg-page-index.jpg') 71% 0% no-repeat ;
       background-size: cover; 
 
       height: 780px;
+      
+      padding: initial;
     }
     .main{
       &__title{
@@ -479,6 +483,12 @@
   @media (max-width: $tableWidth){
     width: 49%;
   }
+  &:hover {
+    filter: grayscale(50%);
+    .menu-card-text {
+      color: $success-color;
+    }
+  }
   &-link {
     &.menu-card-link--img{
       width: 263px;
@@ -487,6 +497,8 @@
   }
   .menu-card-img{
     object-fit: contain;
+    transition: all 0.1s;
+    
   }
   &-text {
     margin-top: 16px;
@@ -517,6 +529,7 @@
   @include link_a($mainFontColor, 700);
   width: 262px;
   height: 262px;
+  transition: all 0.2s;
   @media (max-width: $desktopWidth){
     width: 232px;
     height: 232px;
@@ -530,7 +543,12 @@
     border: 3px solid $mainFontColor;
     box-sizing: border-box;
     border-radius: 5px; 
-    padding: 26px 13px
+    padding: 26px 13px;
+    
+    &:hover{
+      border: 3px solid $success-color;
+      color: $success-color;
+    }
   }
   &-image {
     @include flex(column, center, center);
@@ -548,3 +566,43 @@
   }
 }
 
+#video-bg {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  background: url('../img/bg-page-index.jpg') no-repeat #94a233;
+  background-size: cover;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;   
+    right: 0;
+    bottom: 0;
+    background-color: rgba($mainFontColor, 0.6);
+  }
+}
+
+#video-bg > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto;
+  height: auto; 
+}
+
+@supports (object-fit: cover) {
+   #video-bg > video {
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+   }
+}

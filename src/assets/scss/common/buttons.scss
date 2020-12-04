@@ -7,11 +7,34 @@
   border: 2px solid $warning-color;
   background-color: transparent;
   color: $default-color;
+  transition: all 0.1s;
+
+  &.btn--yellow {
+    border: 2px solid #FFCD1B;
+    box-sizing: border-box;
+    border-radius: 5px;
+    &:hover {
+      color: $mainFontColor;
+      background-color: #FFCD1B;
+    }
+    &:active {
+      background-color: #c09701;
+      color:  $mainFontColor;
+    }
+  }
 
   // default btn
   &.btn--default {
     color: #ffffff;
     border: 2px solid #ffffff;
+    &:hover {
+      color: $mainFontColor;
+      background-color: #ffffff;
+    }
+    &:active {
+      background-color: #c09701;
+      color:  $mainFontColor;
+    }
     @media (max-width: $desktopWidth){ 
       white-space: nowrap;
     }
@@ -32,20 +55,43 @@
     font-weight: 500;
     font-style: italic;
     white-space: nowrap;
+    
+    &:hover {
+      color: $warning-color;
+      background-color: $mainFontColor;
+    }
+    &:active {
+      color: $warning-color;
+      background-color: lighten($mainFontColor, 10%);
+    }
   }
 
   // primiry btn
   &.btn-success {
     border: 1px solid $success-color;
     background-color: $success-color;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 13px 44px;
     color: #ffffff;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 0.05em;
     @media (max-width: $desktopWidth){ 
       font-size: 18px;
       letter-spacing: 1.1px;
+    }
+    &:hover { 
+      background-color: lighten($success-color, 2%);
+      box-shadow: 0 0 10px -5px #000000;
+    }
+    &:active {
+      background-color: darken($success-color, 5%);
+      border: 1px solid darken($success-color, 5%);;
+    }
+    &.btn--main {  
+      font-size: 18px;
+      line-height: 21px; 
+      letter-spacing: 0.05em;   
+      border-radius: 5px;
     }
   }
 
@@ -56,7 +102,10 @@
     padding: 8px 24px;
     color: $success-color;
     font-weight: 500;
-    font-style: italic;
+    font-style: italic; 
+    &:active {
+      box-shadow: 0 0 10px -5px #000000;
+    }
   }
 
   // danger btn

@@ -96,6 +96,10 @@
     &:last-child{
       border: none;
     }
+    &.devices-menu-a--dop-pad {
+      padding-top: 38px;
+      padding-bottom: 38px;
+    }
   }
 }
 
@@ -119,7 +123,7 @@
 // ------------------------
  
 .devices-items {
-  margin-top: 200px;
+  margin-top: 160px;
   background: $neutral-secondary;
   @media (max-width: $tableWidth) {
     background: #fff;

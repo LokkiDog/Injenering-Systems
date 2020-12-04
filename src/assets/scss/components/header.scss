@@ -16,7 +16,7 @@
     padding: 12px 20px; 
   }
   &__nav {
-    @include link_a($light-color);
+    @include link_a($light-color,normal ,$mainFontColor);
     color: $light-color;
     background: $default-color;
     width: 100%;
@@ -24,6 +24,11 @@
     position: absolute;
     bottom: -70px;
     z-index: 2;
+    a {
+      &:hover {
+        font-weight: bold;
+      }
+    }
   }
 }
 // ------------------------
@@ -34,25 +39,34 @@
   border-radius: 4px;
   color: $default-color;
   position: relative;
-  &-input {
-    color: $default-color;
-    @include placeholder {
-      color: $light-color;
-    }
+  transition: all 0.1s;
+  &:hover {
+    border: 2px solid lighten($light-color, 10%);
   }
+  &-input {
+    color: #6F8182;
+    @include placeholder {
+      font-style: italic;
+      color: #6F8182;
+    }
+    &:focus {
+      background: rgba(#ffffff, 0.05);
+    }
+  } 
+  
   &-btn {
     position: absolute;
     right: 10px;
     top: 5px;
     background: transparent;
+    cursor: pointer;
   }
-}
-
+}  
 // ------------------------
 // ---- contacts-block ----
 // ------------------------
 .contacts-block {
-  @include flex(row, space-between, center);
+  @include flex(row, space-between, center); 
   font-weight: 500;
   &__btn {
     margin-left: 20px;
@@ -67,8 +81,15 @@
   &-icon {
     @include flex(row, center, center);
     margin-right: 8px;
-    width: 30px;
+    width: 23px;
   }
+  &-val {
+    &:hover {
+     @include link_a($success-color);
+     color: $success-color;
+    }
+  }
+  
 }
 
 

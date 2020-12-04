@@ -70,5 +70,8 @@
       width: 35%;
       font-size: rem(16);
     }
+    &:hover {
+      text-decoration: none;
+    }
   }
 }

@@ -34,7 +34,12 @@
 
     }
   }
-
+  &.about-us--work {
+    .about-us-img {
+      min-width: 80px;
+      height: 80px;
+    }
+  }
 }
 
 .about {
@@ -43,4 +48,5 @@
     font-size: rem(32);
     font-weight: 500;
   }
+  
 }

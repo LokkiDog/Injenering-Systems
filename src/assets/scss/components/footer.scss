@@ -16,6 +16,12 @@
     font-weight: 300;
     width: 100%;
     padding: 15px 0;
+    .menu-li {
+      &:hover {
+        @include link_a($success-color);
+        color: $success-color;
+       }
+    }
   }
   &-hr {
     margin: 0;
@@ -35,6 +41,7 @@
   &-copyright {
     @include flex(column, space-between, flex-start);
     height: 136px;
+    color: #ffffff;
   }
 // ------------------------
 // ------contacts-block ---
@@ -56,12 +63,18 @@
 
 .address,
 .politics {
-  @include flex(row, center, center);
+  @include flex(row, center, center); 
   &-icon {
     @include flex(row, center, center);
     margin-right: 8px;
     width: 30px;
   }
+} 
+.politics { 
+  &:hover {
+    @include link_a($success-color);
+    color: $success-color;
+   } 
 } 
 
 // ------------------------
@@ -76,9 +89,12 @@
   }
 }
 .design-studio {
-  color: $success-color;
   font-weight: 500;
   font-size: rem(14);
+  &:hover {
+    @include link_a($success-color);
+    color: $success-color;
+   }
 }
 
 /*
@@ -100,6 +116,7 @@
   .footer-address-item {
     margin-bottom: 15px;
     font-size: rem(16);
+    
     @media (max-width:$desktopWidth ){
       margin-bottom: 20px;
     }
@@ -108,14 +125,21 @@
     margin-left: 0;
   } 
   .design{
-   @include link_a($success-color);
    margin-top: 88px;
+   &:hover {
+    @include link_a($success-color);
+    color: $success-color;
+   }
    @media (max-width:$tableWidth ){
      margin-top: 20px;
    }
   }
   .footer-copyright{
     width: 33%;
+    &:hover {
+      @include link_a($success-color);
+      color: $success-color;
+     }
     @media (max-width:$tableWidth ){
       @include flex(column, center,center);
       width: 100%;
@@ -142,6 +166,7 @@
   }
   .footer-address{
     width: 30%; 
+
     @media (max-width:$tableWidth ){
       width: fit-content;
       min-width: 320px;

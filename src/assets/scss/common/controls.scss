@@ -36,6 +36,9 @@ input, textarea {
     line-height: 21px;
     color: rgba($mainFontColor, 0.3);
   }
+  &:focus {
+    border: 1px solid $success-color;
+  }
 } 
 
 .checkbox {

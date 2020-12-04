@@ -16,7 +16,7 @@
 
       <div class="container">
         <div class="search header__search">
-          <input type="text" class="search-input" placeholder="Поиск...">
+          <input type="text" class="search-input" placeholder="Поиск">
           <button type="submit" class="search-btn">
             <img src="assets/img/search-icon.png" alt="Искать">
           </button>
@@ -27,18 +27,18 @@
 
           <div class="contacts-block__tel tel">
             <div class="contacts-block__tel-icon tel-icon">
-              <img src="assets/img/tel-icon.png" alt="Телефон">
+              <img src="assets/img/tel-icon-footer.svg" alt="Телефон">
             </div>
             <div class="contacts-block__tel-val tel-val">
               <a href="tel:+74996734060" class="contacts-block__tel-link">+7 499 673 40 60</a>
             </div>
           </div>
 
-          <button class="contacts-block__btn btn btn-call">Обратный звонок</button>
+          <button class="contacts-block__btn btn btn-call  btn--yellow">Обратный звонок</button>
           
           <div class="contacts-block__email email">
             <div class="contacts-block__email-icon email-icon">
-              <img src="assets/img/email-icon.png" alt="EMail">
+              <img src="assets/img/email-icon-footer.svg" alt="EMail">
             </div>
             <a href="mailto:info@engsystems.ru" class="contacts-block__email-val email-val">info@engsystems.ru</a>
           </div>
@@ -46,9 +46,9 @@
         <!-- /.search header-search -->
 
         <nav class="header__nav nav">
-          <div class="nav-logo">
+          <a href="" class="nav-logo">
             <img src="assets/img/logo.png" alt="Logo">
-          </div>
+          </a>
           <!-- /.menu-logo -->
           <menu class="nav-menu menu">
             <ul class="menu-ul">
@@ -123,21 +123,27 @@
       
 
         <section class="main main--index"> 
-          <div class="container">
-            <h1 class="title main__title h1">
-              Комплектные поставки технологического оборудования
-            </h1>
-            <h3 class="subtitle main__subtitle h3">
-              для предприятий нефтегазовой и&nbsp;нефтехимической отраслей промышленности
-            </h3>
-            <div class="main-button-wrapper">
-              <button class="btn btn-success main__btn">Подробнее</button>
+          <div id="video-bg">
+            
+            <div class="container">
+              <h1 class="title main__title h1">
+                Комплектные поставки технологического оборудования
+              </h1>
+              <h3 class="subtitle main__subtitle h3">
+                для предприятий нефтегазовой и&nbsp;нефтехимической отраслей промышленности
+              </h3>
+              <div class="main-button-wrapper">
+                <button class="btn btn-success btn--main  main__btn">Подробнее</button>
+              </div>
             </div>
+            <!-- /.container -->
+            <!-- poster="assets/img/bg-page-index.jpg" -->
+            <!-- <video width="100%" height="auto" preload="auto" autoplay="autoplay" loop="loop" > -->
+              <!-- <source src="https://dl.dropboxusercontent.com/s/y4ezifkpx5gska8/shutterstock_1006951225.mov?dl=0" type="video/mp4">  -->
+              <!-- <source src="assets/img/video.mov" type="video/mp4"> 
+            </video> -->
           </div>
-          <!-- /.container -->
-        </section>
-
-
+        </section> 
         <section class="catalog-menu"> 
 
           <div class="container title-block">
@@ -391,7 +397,7 @@
           <div class="footer-search">
 
             <div class="search footer__search">
-              <input type="text" class="search-input" placeholder="Поиск...">
+              <input type="text" class="search-input" placeholder="Поиск">
               <button type="submit" class="search-btn">
                 <img src="assets/img/search-icon.png" alt="Искать">
               </button>
@@ -413,7 +419,7 @@
                 </div>
               </div>
 
-              <button class="contacts-block__btn btn btn-call">Обратный звонок</button>
+              <button class="contacts-block__btn btn btn-call  btn--yellow">Обратный звонок</button>
               
               <div class="contacts-block__email email">
                 <div class="contacts-block__email-icon email-icon">
@@ -433,10 +439,10 @@
                 <img src="assets/img/address-logo-footer.svg" alt="Адрес">
               </div>
               <div class="contacts-block__address-val address-val">
-                <a href="tel:+74996734060" class="contacts-block__address-link">
+                <p class="contacts-block__address-link">
                   127644 <br>
                   г. Москва, ул. Ижорская, 15
-                </a>
+                <p/>
               </div>
             </div>
             <div class="contacts-block__politics politics">

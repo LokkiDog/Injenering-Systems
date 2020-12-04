@@ -119,15 +119,21 @@ section,
   }
 }
 .more {
-  @include link_a($success-color);
+  @include link_a($success-color, normal, $mainFontColor);
   @include flex(row, flex-end, center);
 
   color: $success-color;
+  &:hover {
+    filter: grayscale(20%);
+    .more-arrow{
+      filter: grayscale(50%);
+    }
+  }
   &-link {
     @include flex(row, center, center);
   }
   &-arrow {
-    margin-left: 8px;
+    margin-left: 8px; 
   }
 }
 
