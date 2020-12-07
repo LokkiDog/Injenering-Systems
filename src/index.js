@@ -13,6 +13,9 @@ global.$ = $;
 import 'swiper'; 
 
 import 'swiper/swiper-bundle.css';
+import './js/jquery.maskedinput.min.js' 
+
+
 
 // import 'vue'
 // import 'bootstrap/dist/css/bootstrap.min.css'

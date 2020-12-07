@@ -74,6 +74,32 @@ document.addEventListener("DOMContentLoaded", function(){
 
 /*
 ------------------------------
+// Маска на телефон
+------------------------------
+*/
+// функция выравнивает курсор в маске
+$.fn.setCursorPosition = function(pos) {
+  if ($(this).get(0).setSelectionRange) {
+    $(this).get(0).setSelectionRange(pos, pos);
+  } else if ($(this).get(0).createTextRange) {
+    var range = $(this).get(0).createTextRange();
+    range.collapse(true);
+    range.moveEnd('character', pos);
+    range.moveStart('character', pos);
+    range.select();
+  }
+};
+
+$('input[name="phone"]').click(function(){
+  $(this).setCursorPosition(3);
+}).mask("+7(999) 999-9999");
+$("#center_not_ok").mask("+7(999) 999-9999"); 
+
+// ---------------------------
+
+
+/*
+------------------------------
 // Аккордеон
 ------------------------------
 */
@@ -98,8 +124,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   
 //----------------------------
-
-
+ 
 /*
 ------------------------------
 // Мобильно меню
@@ -130,4 +155,6 @@ document.addEventListener("DOMContentLoaded", function(){
     e.preventDefault();
   });
 //----------------------------
+
+ 
 });

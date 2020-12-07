@@ -14,13 +14,13 @@
 <body>
   <div id="app">
 
-    <header class="header">
+        <header class="header">
 
       <div class="container">
         <div class="search header__search">
           <input type="text" class="search-input" placeholder="Поиск">
           <button type="submit" class="search-btn">
-            <img src="assets/img/search-icon.png" alt="Искать">
+            <img src="assets/img/search-icon.svg" alt="Искать">
           </button>
         </div>
         <!-- /.search header-search -->
@@ -57,16 +57,42 @@
               <li class="menu-li"><a href="#">О компании</a></li>
               <li class="menu-li menu-dropdown">
                 <a href="#">Оборудование</a>
+                <span class="menu-arrow">
+                  <img src="assets/img/menu-arrow.svg" alt=">"> 
+                </span>
+                <div class="menu-separ"></div>
+                <ul class="menu-ul menu-ul-child menu-child"> 
+                    <li class="menu-li menu-child-li"><a href="#"> Запорн&#8209;регулирующая арматура</a></li>
+                    <li class="menu-li menu-child-li"><a href="#"> Сливо&#8209;наливное оборудование</a></li>
+                    <li class="menu-li menu-child-li"><a href="#"> Установки&nbsp;осушки&nbsp;сжиженного углеводородного&nbsp;газа</a></li>
+                   
+                    <li class="menu-li menu-child-li"><a href="#"> Контрольно&#8209;измерительные приборы</a></li>
+                    <li class="menu-li menu-child-li"><a href="#"> Установки&nbsp;рекуперации паров</a></li>
+                    <li class="menu-li menu-child-li"><a href="#"> Оборудование&nbsp;для&nbsp;комплексной нефтепереработки</a></li>
+                    
+                    <li class="menu-li menu-child-li"><a href="#"> Насосы</a></li>
+                   
+                </ul>
               </li>
-              <li class="menu-li"><a href="#">Услуги</a></li>
-              <li class="menu-li"><a href="#">Опросные листы</a></li>
+              <li class="menu-li  menu-dropdown">
+                <a href="#">Услуги</a>
+                <span class="menu-arrow">
+                  <img src="assets/img/menu-arrow.svg" alt=">"> 
+                </span>
+                <div class="menu-separ"></div>
+                <ul class="menu-ul menu-ul-child menu-child"> 
+                    <li class="menu-li menu-child-li"><a href="#"> Комплектные&nbsp;поставки технологического&nbsp;оборудования </a></li>
+                    <li class="menu-li menu-child-li"><a href="#"> Шеф&#8209;монтажные&nbsp;и&nbsp;пусконаладочные работы</a></li>
+                    <li class="menu-li menu-child-li"><a href="#"> Разработк&nbsp;рабоче&#8209;конструкторской документации (РКД)</a></li>
+                    
+                </ul>
+              </li>
+              <li class="menu-li">
+                <a href="#">Техническая документация</a> 
+              </li>
               <li class="menu-li"><a href="#">Контакты</a></li>
             </ul>
-            <!-- <ul class="menu-ul menu-ul-child">
-              <li class="menu-li menu-dropdown">Подраздел</li>
-              <li class="menu-li menu-dropdown">Подраздел</li>
-              <li class="menu-li menu-dropdown">Подраздел</li>
-            </ul> -->
+            
           </menu>
           <!-- /.menu-list -->
         </nav>
@@ -157,7 +183,7 @@
           </div>
         </div>
 
-        <section class="devices">
+        <section class="devices devices__devices">
           <div class="container">
             <h2 class="title title--h2 devices__title">
               Запорно-регулирующая арматура:
@@ -664,7 +690,7 @@
             <div class="search footer__search">
               <input type="text" class="search-input" placeholder="Поиск...">
               <button type="submit" class="search-btn">
-                <img src="assets/img/search-icon.png" alt="Искать">
+                <img src="assets/img/search-icon.svg" alt="Искать">
               </button>
             </div>
             <!-- /.search footer-search -->
