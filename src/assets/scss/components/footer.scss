@@ -49,11 +49,21 @@
     @include flex(column, space-between, flex-start);
     .tel {
       margin-bottom: 15px;
+      margin-top: 2px;
+      @media (max-width: $desktopWidth){
+        margin-top: 0;
+      }
       &-icon {
+        width: 25px;
         @media (max-width: $desktopWidth){
           width: 21px;
         }
       } 
+    // .email {
+    //   &-icon {
+    //     width: 28px !important;
+    //   }
+    // }
       
     }
     .btn { 
@@ -67,14 +77,21 @@
   }
 }
 
-
+// .email {
+//   &-icon {
+//     width: 28px;
+//     @media (max-width: $desktopWidth){
+//       width: 20px;
+//     }
+//   }
+// }
 .address,
 .politics {
   @include flex(row, center, center); 
   &-icon {
     @include flex(row, center, center);
     margin-right: 8px;
-    width: 30px;
+    width: 25px;
     @media (max-width: $desktopWidth){
       width: 20px;
       margin-right: 20px;
@@ -202,6 +219,7 @@
     .tel,
     .email {
       &-icon {
+        
         @media (max-width: $desktopWidth){
           width: 20px;
           margin-right: 20px;

@@ -5,6 +5,7 @@ table {
   border-collapse: separate;
   border-spacing: 2px 2px;
   background-color: #F1F1F1;
+  border-collapse: collapse;
   thead th { 
     padding: 12px 14px;
     background-color:  #F1F1F1;
@@ -21,6 +22,10 @@ table {
     @media   (max-width: $tableWidth) {
       padding: 12px 2px;
     }
+  }
+  tbody {
+    border-top: 2px solid #fff ;
+    border-bottom: 2px solid #fff ;
   }
   tbody tr:nth-child(n+1) {
     background-color: #F1F1F1;   
@@ -46,6 +51,9 @@ table {
     line-height: rem(16);
     &.table-td--three {
       position: relative;
+    }
+    &:not(:last-child){
+      border-right: 2px solid #fff;
     }
   }
   &-th {

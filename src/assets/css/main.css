@@ -1,0 +1,40 @@
+.zoom {
+	cursor: zoom-in;
+}
+.zoom:hover {
+	box-shadow: 0 0 10px -5px #000; 
+}
+.popup {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+	z-index: 10;
+}
+
+.popup_bg {
+	background:rgba(0,0,0,0.8);
+	position:absolute;
+	z-index:1;
+	height:100%;
+	width:100%;
+	cursor: zoom-out;
+
+}
+
+
+.popup_img {
+	position: relative;
+	margin:0 auto;
+	z-index:2;
+	max-height:94%;
+	max-width:94%;
+	margin:1% 0 0 0;
+	transform: scale(1.5);
+}

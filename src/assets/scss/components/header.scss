@@ -89,7 +89,10 @@
   &-icon {
     @include flex(row, center, center);
     margin-right: 8px;
-    width: 23px;
+    width: 25px;
+    @media (max-width: $desktopWidth){
+      width: 20px;
+    }
   }
   &-val {
     &:hover {
@@ -111,6 +114,10 @@
   @include flex(row, space-between, center);
   &-menu {
     width: 72%;
+  }
+  &-logo {
+    width: 263px;
+    height: auto;
   }
   
 }

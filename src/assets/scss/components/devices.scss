@@ -46,7 +46,7 @@
 // ------------------------
 
 .devices-menu {
-  @include link_a($mainFontColor, 700, $success-color);
+  @include link_a($mainFontColor, 400, $success-color);
   &.devices-menu--tablet {
     display: none;
     @media (max-width: $desktopWidth){ 
@@ -210,15 +210,15 @@
 // ------------------------
 
 .questionnaire {
-  @include flex(row, space-between, center);
+  @include flex(row, space-between, flex-end);
   margin-top: 40px;
   position: relative;
   background: url('../img/bg-questionnaire.png') 0% 0%;
   background-size: cover;
   background-repeat: no-repeat;
 
-  border-radius: 15px;
-  padding: 26px 18px;
+  border-radius: 10px;
+  padding: 26px 18px 37px 18px;
 
   overflow: hidden;
   @media   (max-width: $tableWidth) {
@@ -271,11 +271,10 @@
   }
 
   &__title {
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     font-size: rem(28) !important;
     line-height: rem(33) !important;
     @media (max-width: $desktopWidth){ 
-      font-weight: 400 !important;
       font-size: rem(24) !important;
       line-height: rem(28) !important;
     }
@@ -305,6 +304,8 @@
     }
   }
   &__btn {
+    font-style: italic;
+    font-weight: 400;
     @media   (max-width: $tableWidth) {
       padding: 8px 5px;
       font-size: 13px;
