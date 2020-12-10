@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Инженерные системы</title>
+</head>
+<body>
+  
+  <div id="app">
+
+    <header class="header">
+
+      <div class="container">
+        <div class="search header__search">
+          <input type="text" class="search-input" placeholder="Поиск">
+          <button type="submit" class="search-btn">
+            <img src="assets/img/search-icon.svg" alt="Искать">
+          </button>
+        </div>
+        <!-- /.search header-search -->
+
+        <div class="contacts-block header__contacts-block">
+
+          <div class="contacts-block__tel tel">
+            <div class="contacts-block__tel-icon tel-icon">
+              <img src="assets/img/tel-icon-footer.svg" alt="Телефон">
+            </div>
+            <div class="contacts-block__tel-val tel-val">
+              <a href="tel:+74996734060" class="contacts-block__tel-link">+7 499 673 40 60</a>
+            </div>
+          </div>
+
+          <button class="contacts-block__btn btn btn-call  btn--yellow">Обратный звонок</button>
+          
+          <div class="contacts-block__email email">
+            <div class="contacts-block__email-icon email-icon">
+              <img src="assets/img/email-icon-footer.svg" alt="EMail">
+            </div>
+            <a href="mailto:info@engsystems.ru" class="contacts-block__email-val email-val">info@engsystems.ru</a>
+          </div>
+        </div>
+        <!-- /.search header-search -->
+
+        <nav class="header__nav nav">
+          <a href="" class="nav-logo">
+            <img src="assets/img/logo.svg" alt="Logo">
+          </a>
+          <!-- /.menu-logo -->
+          <menu class="nav-menu menu">
+            <ul class="menu-ul">
+              <li class="menu-li"><a href="#">О компании</a></li>
+              <li class="menu-li menu-dropdown">
+                <a href="#">Оборудование</a>
+                <span class="menu-arrow">
+                  <img src="assets/img/menu-arrow.svg" alt=">"> 
+                </span>
+                <div class="menu-separ"></div>
+                <ul class="menu-ul menu-ul-child menu-child menu-child--three"> 
+                    <li class="menu-li menu-child-li"><a href="#"> Запорно&#8209;регулирующая арматура</a></li>
+                    <li class="menu-li menu-child-li"><a href="#"> Сливо&#8209;наливное оборудование</a></li>
+                    <li class="menu-li menu-child-li"><a href="#"> Установки&nbsp;осушки&nbsp;сжиженного углеводородного&nbsp;газа</a></li>
+                   
+                    <li class="menu-li menu-child-li"><a href="#"> Контрольно&#8209;измерительные приборы</a></li>
+                    <li class="menu-li menu-child-li"><a href="#"> Установки&nbsp;рекуперации паров</a></li>
+                    <li class="menu-li menu-child-li"><a href="#"> Оборудование&nbsp;для&nbsp;комплексной нефтепереработки</a></li>
+                    
+                    <li class="menu-li menu-child-li"><a href="#"> Насосное оборудование</a></li>
+                   
+                </ul>
+              </li>
+              <li class="menu-li  menu-dropdown">
+                <a href="#">Услуги</a>
+                <span class="menu-arrow">
+                  <img src="assets/img/menu-arrow.svg" alt=">"> 
+                </span>
+                <div class="menu-separ"></div>
+                <ul class="menu-ul menu-ul-child menu-child"> 
+                    <li class="menu-li menu-child-li"><a href="#"> Комплектные&nbsp;поставки технологического&nbsp;оборудования </a></li>
+                    <li class="menu-li menu-child-li"><a href="#"> Шеф&#8209;монтажные&nbsp;и&nbsp;пусконаладочные работы</a></li>
+                    <li class="menu-li menu-child-li"><a href="#"> Разработк&nbsp;рабоче&#8209;конструкторской документации (РКД)</a></li>
+                    
+                </ul>
+              </li>
+              <li class="menu-li">
+                <a href="#">Техническая документация</a> 
+              </li>
+              <li class="menu-li"><a href="#">Контакты</a></li>
+            </ul>
+            
+          </menu>
+          <!-- /.menu-list -->
+        </nav>
+        <!-- /. nav-->
+
+      </div>
+      <!-- /.container -->
+    </header>
+
+    <header class="header-mob"> 
+      <div class="container">
+        <div class="header-mob-logo">
+          <img src="assets/img/logo.svg" alt="Logo">
+        </div>
+        <div class="burger-wrapper">
+          <div class="burger header-mob__burger" id="burger">
+            <input type="checkbox" />
+            <span id="burger-span1"></span>
+            <span id="burger-span2"></span>
+            <span id="burger-span3"></span>
+          </div>
+          <!-- /.burger header_mob__burger -->
+        </div> 
+      </div>
+      <!-- /.container -->
+
+
+      <nav class="header-mob__nav nav" id="mob-menu"> 
+        <div class="container">
+          <menu class="nav-menu menu" >
+            <ul class="menu-ul">
+              <li class="menu-li"><a href="#">О компании</a></li>
+              <li class="menu-li menu-dropdown">
+                <a href="#">Оборудование</a>
+              </li>
+              <li class="menu-li"><a href="#">Услуги</a></li>
+              <li class="menu-li"><a href="#">Опросные листы</a></li>
+              <li class="menu-li"><a href="#">Контакты</a></li>
+            </ul>
+            <!-- <ul class="menu-ul menu-ul-child">
+              <li class="menu-li menu-dropdown">Подраздел</li>
+              <li class="menu-li menu-dropdown">Подраздел</li>
+              <li class="menu-li menu-dropdown">Подраздел</li>
+            </ul> -->
+          </menu>
+          <!-- /.menu-list -->
+        </div>
+        <!-- /.container --> 
+      </nav>
+      <!-- /. nav-->
+    </header>
+ 
+
+    <main class="wrapper">
+
+       <section class="policy">
+         <div class="container">
+          
+         <h3 class="title title__h3 policy__title">Политика в отношении обработки персональных данных</h3>
+          <div class="block policy__block ">
+            <h3 class="block__subtitle">
+              1. Общие положения
+            </h3>
+            <div class="block__text">
+              <p class="text">
+                Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. № 152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по  обеспечению безопасности персональных данных (далее — Оператор).
+              </p>
+              <p  class="text">
+                1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на  неприкосновенность частной жизни, личную и семейную тайну.
+                <br>2. Настоящая политика Оператора в отношении обработки персональных данных (далее — Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта .
+              </p>
+            </div>
+          </div>
+          <!-- /.block -->
+
+          <div class="block policy__block ">
+            <h3 class="block__subtitle">
+              2. Основные понятия, используемые в Политике
+            </h3>
+            <div class="block__text">
+              <p class="text">
+                1. Автоматизированная обработка персональных данных — обработка персональных данных с помощью средств вычислительной техники;
+                <br>  2. Блокирование персональных данных — временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);
+                <br>3. Веб-сайт — совокупность графических и информационных материалов, а  также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу http:/.ru;
+                <br>4. Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их  обработку информационных технологий и технических средств;
+                <br>5. Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных;
+                <br>6. Обработка персональных данных — любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;
+                <br>7. Оператор — государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а  также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными;
+                <br>8. Персональные данные — любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб- сайта  http://.ru;
+                <br>9. Пользователь — любой посетитель веб-сайта http://.ru;
+                <br>10. Предоставление персональных данных — действия, направленные на  раскрытие персональных данных определенному лицу или определенному
+                 кругу лиц;
+                <br>11. Распространение персональных данных — любые действия, направленные на  раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к персональным данным каким-либо иным способом;
+                <br>12. Трансграничная передача персональных данных — передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу;
+                <br>13. Уничтожение персональных данных — любые действия, в результате которых персональные данные уничтожаются безвозвратно с невозможностьюдальнейшего восстановления содержания персональных данных в  информационной системе персональных данных и (или) результате которыхуничтожаются материальные носители персональных данных.
+              </p>
+            </div>
+          </div>
+          <!-- /.block -->
+
+
+
+          <div class="block policy__block ">
+            <h3 class="block__subtitle">
+              3. Оператор может обрабатывать следующие персональные данные Пользователя
+            </h3>
+            <div class="block__text">
+              <p class="text">
+                1. Фамилия, имя, отчество;
+                <br>2. Электронный адрес;
+                <br>3. Номера телефонов;
+                <br>4. Также на сайте происходит сбор и обработка обезличенных данных о  посетителях (в т. ч. файлов «cookie») с помощью сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).
+                <br>5. Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.
+              </p>
+            </div>
+          </div>
+          <!-- /.block -->
+
+          <div class="block policy__block ">
+            <h3 class="block__subtitle">
+              4. Цели обработки персональных данных
+            </h3>
+            <div class="block__text">
+              <p class="text">
+                1. Цель обработки персональных данных Пользователя — информирование Пользователя посредством отправки электронных писем; предоставление доступа Пользователю к сервисам, информации и/или материалам, содержащимся на веб-сайте.
+                <br>2. Также Оператор имеет право направлять Пользователю уведомления о  новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь всегда может отказаться от получения информационных сообщений, направив Оператору письмо на адрес электронной почты   с пометкой «Отказ от уведомлениях о  новых продуктах и услугах и специальных предложениях».
+                <br>3. Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора информации о действиях Пользователей на сайте, улучшения качества сайта и его содержания.
+              </p>
+            </div>
+          </div>
+          <!-- /.block -->
+
+          <div class="block policy__block ">
+            <h3 class="block__subtitle">
+              5. Правовые основания обработки персональных данных
+            </h3>
+            <div class="block__text">
+              <p class="text">
+                1. Оператор обрабатывает персональные данные Пользователя только в  случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на сайте http://.ru. Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой.
+                <br>2. Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в настройках браузера Пользователя (включено сохранение файлов «cookie» и использование технологии JavaScript).
+              </p>
+            </div>
+          </div>
+          <!-- /.block -->
+
+          
+          <div class="block policy__block ">
+            <h3 class="block__subtitle">
+              6. Порядок сбора, хранения, передачи и других видов обработки персональных данных
+            </h3>
+            <div class="block__text">
+              <p class="text">
+                Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в области защиты персональных данных.
+              </p>
+              <p class="text">
+                1. Оператор обеспечивает сохранность персональных данных и принимает все возможные меры, исключающие доступ к персональным данным  неуполномоченных лиц.
+                <br>2. Персональные данные Пользователя никогда, ни при каких условиях не будут переданы третьим лицам, за исключением случаев, связанных с исполнением действующего законодательства.
+                <br>3. В случае выявления неточностей в персональных данных, Пользователь может актуализировать их самостоятельно, путем направления Оператору
+                уведомление на адрес электронной почты Оператора с  пометкой «Актуализация персональных данных».
+                <br>4. Срок обработки персональных данных является неограниченным. Пользователь может в любой момент отозвать свое согласие на обработку персональных данных, направив Оператору уведомление посредством электронной почты на электронный адрес Оператора  с пометкой «Отзыв согласия на обработку персональных данных».
+              </p>
+            </div>
+          </div>
+          <!-- /.block -->
+
+
+          
+          <div class="block policy__block ">
+            <h3 class="block__subtitle">
+              7. Трансграничная передача персональных данных
+            </h3>
+            <div class="block__text">
+              <p class="text">
+                <br>1. Оператор до начала осуществления трансграничной передачи персональных данных обязан убедиться в том, что иностранным государством, на  территорию которого предполагается осуществлять передачу персональных данных, обеспечивается надежная защита прав субъектов персональных данных.
+                <br>2. Трансграничная передача персональных данных на территории иностранных государств, не отвечающих вышеуказанным требованиям, может  осуществляться только в случае наличия согласия в письменной форме субъекта персональных данных на трансграничную передачу его персональных данных и/или исполнения договора, стороной которого является субъект персональных данных.
+              </p>
+            </div>
+          </div>
+          <!-- /.block -->
+
+
+          <div class="block policy__block ">
+            <h3 class="block__subtitle">
+              8. Заключительные положения
+            </h3>
+            <div class="block__text">
+              <p class="text">
+                <br>1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к  Оператору с помощью электронной почты.ru.
+                <br>2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.
+                <br>3. Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу http://.ru/policy.
+              </p>
+            </div>
+          </div>
+          <!-- /.block -->
+
+         </div>
+       </section>
+
+
+       <section class="form-section form-section--index">
+        <div class="container">
+
+          <div class="form-block">
+
+            <h2 class="title title--h2 form-block__title">Оставить заявку</h2>
+            
+            <form action="" method="POST" class="form form-block__form">
+              <div class="form-block-inputs">
+                <input class="input form__input" type="text" name="name" placeholder="Ваше имя">
+                <input class="input form__input" type="tel" name="phone" placeholder="8 (888) 888-88-88">
+                <input class="input form__input" type="email" name="email" placeholder="Электронный адрес">
+              </div>
+              <textarea class="textarea form__textarea form-block-textarea" type="text" name="comment" placeholder="Комментарий"></textarea>
+              <!-- /.form-block-inputs -->
+
+              <div class="form-block-controls">
+
+                <label class="checkbox form-block-controls__checkbox">
+                  <input class="checkbox-input" type="checkbox">
+                  <span class="checkbox-text">
+                    Вы согласны на обработку персональных данных
+                  </span>
+                </label>
+                <!-- /.checkbox -->
+
+                <div class="form-block-btns">
+
+                  <div class="form-block__btn-file btn-file">
+                    <input class="btn-file-btn" type="file" name="file" id="file" data-multiple-caption="Выбрано файлов: {count}" multiple />
+                    <label class="btn btn-success-trans btn-file-label" for="file">
+                      <span>Прикрепить файл</span>
+                    </label>
+                  </div>
+                  
+                  <input type="submit" class="btn btn-success form-block__btn" value="Отправить"/>
+                </div>
+
+              </div>
+              <!-- /.form-block-btns --> 
+            </form>
+
+          </div>
+          <!-- /.form-block -->
+
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.form -->
+
+
+    </main>
+    
+    <footer class="footer">
+      <div class="container">
+
+        <nav class="footer__nav nav">
+          <div class="nav-logo">
+            <img src="assets/img/logo-white.svg" alt="Logo">
+          </div>
+          <!-- /.menu-logo -->
+          <menu class="nav-menu menu">
+            <ul class="menu-ul">
+              <li class="menu-li"><a href="#">О компании</a></li>
+              <li class="menu-li"><a href="#">Оборудование</a></li>
+              <li class="menu-li"><a href="#">Услуги</a></li>
+              <li class="menu-li"><a href="#">Опросные листы</a></li>
+              <li class="menu-li"><a href="#">Контакты</a></li>
+            </ul>
+          </menu>
+          <!-- /.menu-list -->
+        </nav>
+        <!-- /. nav-->
+
+      </div>
+
+      <hr class="footer-hr" noshade size="1">
+
+      <div class="container">
+        <div class="footer-info">
+
+          <div class="footer-search">
+
+            <div class="search footer__search">
+              <input type="text" class="search-input" placeholder="Поиск">
+              <button type="submit" class="search-btn">
+                <img src="assets/img/search-icon.svg" alt="Искать">
+              </button>
+            </div>
+            <!-- /.search footer-search -->
+
+          </div>
+          <!-- /.footer-search -->
+
+          <div class="footer-contacts">
+
+            <div class="footer__contacts-block contacts-block">
+              <div class="contacts-block__tel tel">
+                <div class="contacts-block__tel-icon tel-icon">
+                  <img src="assets/img/tel-icon-footer.svg" alt="Телефон">
+                </div>
+                <div class="contacts-block__tel-val tel-val">
+                  <a href="tel:+74996734060" class="contacts-block__tel-link">+7 499 673 40 60</a>
+                </div>
+              </div>
+
+              <button class="contacts-block__btn btn btn-call  btn--yellow">Обратный звонок</button>
+              
+              <div class="contacts-block__email email">
+                <div class="contacts-block__email-icon email-icon">
+                  <img src="assets/img/email-icon-footer.svg" alt="EMail">
+                </div>
+                <a href="mailto:info@engsystems.ru" class="contacts-block__email-val email-val">info@engsystems.ru</a>
+              </div>
+            </div>
+            <!-- /.search header-search -->
+
+          </div>
+          <!-- /.footer-contacts -->
+          <div class="footer-address">
+
+            <div class="contacts-block__address address">
+              <div class="contacts-block__address-icon address-icon">
+                <img src="assets/img/address-logo-footer.svg" alt="Адрес">
+              </div>
+              <div class="contacts-block__address-val address-val">
+                <p class="contacts-block__address-link">
+                  127644 <br>
+                  г. Москва, ул. Ижорская, 15
+                <p/>
+              </div>
+            </div>
+            <div class="contacts-block__politics politics">
+              <div class="contacts-block__politics-icon politics-icon">
+                <img src="assets/img/politics-logo-footer.svg" alt="Политика конфиденциальности">
+              </div>
+              <div class="contacts-block__politics-val politics-val">
+                <a href="#" class="contacts-block__politics-link">
+                  Политика конфиденциальности
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.footer-address -->
+          <div class="footer-copyright copyright">
+            <a href="https://just-studio.ru/" class="design-studio">
+              Design by Just Studio
+            </a>
+            <div class="copyright-rights">
+              © 2003–2020 <br>
+              <a href="https://engsystems.ru" class="copyright-link">engsystems.ru</a> 
+            </div>
+          </div>
+          <!-- /.footer-copyright -->
+        </div>
+        <!-- /.footer-info -->
+      </div>
+
+
+      <div class="modal" id="modal">
+        <div class="modal-wrapper">
+          <h3 class="title modal__title">Обратный звонок</h3>
+          <form action="" method="post" class="modal__form form" id="modalForm">
+            <input type="text" name="name" class="input modal__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="input modal__input" placeholder="8 (888) 888 88 88">
+            <input type="submit" class="btn btn-success modal__btn" value="Отправить">
+            
+          </form>
+          <div class="cross" id="cross">
+            &#10006;
+          </div>
+        </div>
+      </div>
+      <!-- /.modal -->
+
+
+    </footer>
+    <!-- /.footer -->
+
+    <footer class="footer footer-mob"> 
+       
+      <div class="container">
+        <div class="footer-info"> 
+
+          <div class="footer-copyright copyright">
+            <div class="nav-logo">
+              <img src="assets/img/logo-white.svg" alt="Logo">
+            </div>
+            <div class="copyright-rights">
+              © 2003–2020 
+              <a href="https://engsystems.ru" class="copyright-link">engsystems.ru</a> 
+            </div>
+            <!-- /.menu-logo -->
+            <div class="design">
+              <a href="https://just-studio.ru/" class="design-studio">
+                Design by Just Studio
+              </a>
+            </div>
+            
+            
+          </div>
+          <!-- /.footer-copyright -->
+
+          <div class="footer-menu">
+
+            <div class="footer__menu menu">
+              <menu class="nav-menu menu" >
+                <ul class="menu-ul">
+                  <li class="menu-li"><a href="#">О компании</a></li>
+                  <li class="menu-li menu-dropdown">
+                    <a href="#">Оборудование</a>
+                  </li>
+                  <li class="menu-li"><a href="#">Услуги</a></li>
+                  <li class="menu-li"><a href="#">Техническая документация</a></li>
+                  <li class="menu-li"><a href="#">Контакты</a></li>
+                </ul>
+                <!-- <ul class="menu-ul menu-ul-child">
+                  <li class="menu-li menu-dropdown">Подраздел</li>
+                  <li class="menu-li menu-dropdown">Подраздел</li>
+                  <li class="menu-li menu-dropdown">Подраздел</li>
+                </ul> -->
+              </menu>
+            </div>
+            <!-- /.search header-search --> 
+          </div>
+          <!-- /.footer-contacts --> 
+
+          <div class="footer-address">
+            <div class="contacts-block__tel tel footer-address-item">
+              <div class="contacts-block__tel-icon tel-icon">
+                <img src="assets/img/tel-icon-footer.svg" alt="Телефон">
+              </div>
+              <div class="contacts-block__tel-val tel-val">
+                <a href="tel:+74996734060" class="contacts-block__tel-link">+7 499 673 40 60</a>
+              </div>
+            </div> 
+            <div class="contacts-block__address address footer-address-item">
+              <div class="contacts-block__address-icon address-icon">
+                <img src="assets/img/address-logo-footer.svg" alt="Адрес">
+              </div>
+              <div class="contacts-block__address-val address-val">
+                <a href="tel:+74996734060" class="contacts-block__address-link">
+                  
+                  г. Москва, ул. Ижорская, 15
+                </a>
+              </div>
+            </div>
+            <div class="contacts-block__email email footer-address-item">
+              <div class="contacts-block__email-icon email-icon">
+                <img src="assets/img/email-icon-footer.svg" alt="EMail">
+              </div>
+              <a href="mailto:info@engsystems.ru" class="contacts-block__email-val email-val">info@engsystems.ru</a>
+            </div>
+            <div class="contacts-block__politics politics footer-address-item">
+              <div class="contacts-block__politics-icon politics-icon">
+                <img src="assets/img/politics-logo-footer.svg" alt="Политика конфиденциальности">
+              </div>
+              <div class="contacts-block__politics-val politics-val">
+                <a href="#" class="contacts-block__politics-link">
+                  Политика конфиденциальности
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.footer-address -->
+
+          
+        </div>
+        <!-- /.footer-info -->
+
+      </div>
+      <!-- /.container -->
+
+
+      <div class="modal" id="modal">
+        <div class="modal-wrapper">
+          <h3 class="title modal__title">Обратный звонок</h3>
+          <form action="" method="post" class="modal__form form" id="modalForm">
+            <input type="text" name="name" class="input modal__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="input modal__input" placeholder="8 (888) 888 88 88">
+            <input type="submit" class="btn btn-success modal__btn" value="Отправить">
+            
+          </form>
+          <div class="cross" id="cross">
+            &#10006;
+          </div>
+        </div>
+      </div>
+      <!-- /.modal -->
+
+
+    </footer>
+    <!-- /.footer-mob -->
+
+  </div>
+  <!-- /.app -->
+   
+</body>
+</html>

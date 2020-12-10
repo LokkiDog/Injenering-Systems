@@ -88,6 +88,24 @@
     background: url('../img/bg-page-2.jpg') 0% 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-page-2-tablet.jpg') 71% 0% no-repeat ;
+      background-size: cover; 
+
+      height: 780px;
+      
+      padding: initial;
+    }
+    .main{
+      &__title{
+        @media (max-width: $tableWidth){
+          margin-top: 180px;
+        }
+      }
+      &-button-wrapper{
+        margin-bottom: 200px;
+      }
+    }
     .main{
       &__title{
         margin-bottom: 120px;
@@ -398,7 +416,14 @@
   //   @include center($maxWidth-desk);
   // }
   &__title{
-    margin-top: 128px;
+    margin-top: 128px; 
+    text-transform: uppercase;
+    font-size: 53px;
+    line-height: 132%;
+    
+    &:first-letter {
+      font-size: rem(67);
+    }
   }
   &__subtitle{
     margin-top: 41px;

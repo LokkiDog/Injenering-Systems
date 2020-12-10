@@ -1,0 +1,27 @@
+.policy {
+  font-size: 16px;
+  line-height: 19px;
+  &__title {
+    margin: 40px 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px; 
+
+    color: #35383F;
+    text-align: center;
+  }
+}
+.block{
+  margin-bottom: 28px;
+  &__subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    
+    color: #35383F;
+    margin-bottom: 10px;
+  }
+}

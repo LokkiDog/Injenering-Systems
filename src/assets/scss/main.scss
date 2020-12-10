@@ -68,7 +68,10 @@ li {
   padding: 0;
   list-style-type: none;
 }
-
+sup {
+  font-size: small;
+  vertical-align: super;
+}
 section,
 .section {
   position: relative;
@@ -194,6 +197,31 @@ section,
       }  
     }
   }
+  &-tablet-flex {
+    display: flex;
+    @media screen and (max-width: $desktopWidth) {
+      display: none;
+    }
+    @media screen and (max-width: $tableWidth) {
+      display: flex;
+    }  
+    &.hide-mob {
+      @media screen and (max-width: $desktopWidth) {
+        display: none;
+      }
+      @media screen and (max-width: $tableWidth) {
+        display: none;
+      } 
+    }
+    &.hide-mob500 {
+      @media screen and (max-width: $desktopWidth) {
+        display: none;
+      }
+      @media screen and (max-width: $tableWidth) {
+        display: none;
+      }  
+    }
+  }
   &-mob {
     display: block;
     @media screen and (max-width: $desktopWidth) {
@@ -203,12 +231,21 @@ section,
       display: none;
     }  
   } 
+  &-mob-flex {
+    display: flex;
+    @media screen and (max-width: $desktopWidth) {
+      display: flex;
+    }
+    @media screen and (max-width: $tableWidth) {
+      display: none;
+    }  
+  } 
   &-desktop{
     @media screen and (min-width: $desktopWidth) {
       display: none;
     }
-  }
-} 
+  }  
+}  
 //Common
 @import "./common.scss";
 
@@ -233,4 +270,5 @@ section,
 @import "components/partners.scss";
 @import "components/qlists.scss";
 @import "components/404.scss";
+@import "components/policy.scss";
 

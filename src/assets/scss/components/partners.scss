@@ -1,54 +1,155 @@
 .partners {
-  .partners__title {
-    margin-top: 100px;
+  .partners__title { 
+    margin-top: 80px;
     @media (max-width: $desktopWidth){
       margin-top: 30px;
     }
+    &:first-child {
+      margin-top: 0;
+      @media (max-width: $desktopWidth){
+        margin-top: 0;
+      }
+    }
+  }
+  &.partners-page {
+    margin-top: 30px;
+  }
+  
+  .img-links-row {
+    margin-top: 60px;
+    @media   (max-width: $tableWidth) {
+        margin-top: 20px; 
+    }
   }
 
-.img-links-a {
-  margin: 0;
-  @media (max-width: $desktopWidth){
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  @media   (max-width: $tableWidth) {
-    margin-top: 20px; 
-  }
-  .img-links-img {
-    max-height: 48px;
-  }
-  
-  &:not(:first-child),
-  &:not(:last-child) {
-    margin: auto;
-    // @media (max-width: $desktopWidth){
-    //   width: 33%; 
-    // }
-    @media   (max-width: $tableWidth) {
-      margin-top: 20px; 
+  .img-links-a {
+    
+    .img-links-img {
+      max-height: 60px;
+      @media   (max-width: $desktopWidth) {
+        max-height: 38px;
+      }
     }
+    
+  
   }
-  &:first-child,
-  &:last-child{
-    margin-left: 0;
-    margin-top: auto;
-    @media (max-width: $desktopWidth){ 
-      margin-bottom: 28px;
-      margin-top: 26px;
-      width: initial;
+  .img-links-row--first {
+    .img-links-a {
+      margin-right: 68px;
+      .img-links-img {
+        @media   (max-width: $tableWidth) {
+          max-height: 30px;
+        }
+      }
+      @media   (max-width: $desktopWidth) {
+        margin-right: 15px;
+      }
+      @media   (max-width: $tableWidth) {
+        margin-right: 10px;
+      }
     }
     @media   (max-width: $tableWidth) {
-      margin: auto; 
-      margin-top: 20px; 
+      @include flex(row, flex-start, center);
+      flex-wrap: wrap;
     }
-  }  
-  
-  margin-top: 50px;
-}
-  .img-links-row--partners {
-    justify-content: flex-start;
+  }
+  .img-links-row--second {
+    .img-links-a {
+      margin-right: 68px;
+      .img-links-img {
+        @media   (max-width: $tableWidth) {
+          max-height: 30px;
+        }
+      }
+      @media   (max-width: $desktopWidth) {
+        margin-right: 15px;
+      }
+      @media   (max-width: $tableWidth) {
+        margin-right: 10px;
+      }
+    }
+    @media   (max-width: $tableWidth) {
+      @include flex(row, flex-start, center);
+      flex-wrap: wrap;
+    } 
+  }
+  .img-links-row--ninth {
+    @include flex(row, flex-start, center);
+    .img-links-a {
+      margin-right: 93px;
+    }
+  }
+  .img-links-row--twelfth {
+    @include flex(row, flex-start, center);
+    .img-links-a {
+      margin-right: 107px;
+      .img-links-img {
+        @media   (max-width: $tableWidth) {
+          max-height: 30px;
+        }
+      }
+      @media   (max-width: $desktopWidth) {
+        margin-right: 15px;
+      }
+      @media   (max-width: $tableWidth) {
+        margin-right: 10px;
+      }
+    }
+    
+    
+  }
+  .img-links-row--between {
+    @include flex(row, space-between, center);
+    @media   (max-width: $desktopWidth) {
+      @include flex(row,flex-start, center);
+      flex-wrap: wrap;
+    }
+    .img-links-a {
+      margin-right: 0;
+      .img-links-img {
+        @media   (max-width: $tableWidth) {
+          max-height: 30px;
+        }
+      }
+      @media   (max-width: $desktopWidth) {
+        margin-right: 15px;
+      }
+      @media   (max-width: $tableWidth) {
+        margin-right: 10px;
+      }
+    }
+  }
+  .img-links-row--wrap {
+    @include flex(row, space-between, center);
     flex-wrap: wrap;
+    @media   (max-width: $desktopWidth) {
+      @include flex(row,flex-start, center);
+      flex-wrap: wrap;
+    }
+    .img-links-a {
+      margin-right: 0;
+      .img-links-img {
+        @media   (max-width: $tableWidth) {
+          max-height: 30px;
+        }
+      }
+      @media   (max-width: $desktopWidth) {
+        margin-right: 15px;
+      }
+      @media   (max-width: $tableWidth) {
+        margin-right: 10px;
+      }
+    }
+  }
+  .img-links-row--column {
+    @include flex(column, flex-start, center);
+    @media (max-width: $desktopWidth) {
+      display: block;
+    }
+    &.img-links-row--column--hide-mob {
+      @media   (max-width: $tableWidth) {
+        display: none;
+      }
+    }
   }
 }

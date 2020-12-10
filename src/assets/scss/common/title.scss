@@ -11,6 +11,9 @@
     font-size: rem(36);
     line-height: 108%;
     color: $mainFontColor;
+    @media (max-width: $tableWidth){
+      font-size: 24px;
+    }
   }
   &.title--h3 {
     font-weight: 600;

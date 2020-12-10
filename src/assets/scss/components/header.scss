@@ -131,13 +131,16 @@
       top: 77px;
       display: grid;
       grid-template-columns: 33% 33% 33%;
-      grid-template-rows: 50px 50px 50px;
+      grid-template-rows: 50px;
       row-gap: 22px;
       width: 100%;
       padding: 57px 68px;
       background-color: #fff;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px; 
+      &.menu-child--three {
+        grid-template-rows: 50px 50px 50px;
+      }
     }
   }
   &-li { 
