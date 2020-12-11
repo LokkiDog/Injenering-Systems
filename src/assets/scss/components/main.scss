@@ -420,9 +420,14 @@
     text-transform: uppercase;
     font-size: 53px;
     line-height: 132%;
-    
+    @media (max-width: $tableWidth){
+      font-size: rem(38);
+    }
     &:first-letter {
       font-size: rem(67);
+      @media (max-width: $tableWidth){
+        font-size: rem(50);
+      }
     }
   }
   &__subtitle{

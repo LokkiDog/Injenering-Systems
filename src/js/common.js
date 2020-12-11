@@ -127,7 +127,7 @@ $("#center_not_ok").mask("+7(999) 999-9999");
  
 /*
 ------------------------------
-// Мобильно меню
+// Мобильное меню
 ------------------------------
 */ 
 // Открытие закрытие
@@ -142,7 +142,21 @@ $("#center_not_ok").mask("+7(999) 999-9999");
     }
   }); 
 //----------------------------
+$('.menu-dropdown-mob > a').on('click', (e) => { 
+ 
+});
 
+// Выпадающие списки
+  $('.menu-dropdown-mob').on('click', (e) => { 
+    $(e.target).find('.menu-ul-child-mob').toggle();
+    $(e.target).siblings('.menu-ul-child-mob').toggle();
+
+    $(e.target).siblings('.menu-arrow').toggleClass('active-arrow');
+    $(e.target).find('.menu-arrow').toggleClass('active-arrow');
+
+
+    e.stopPropagation();
+  })
 /*
 ------------------------------
 // Плавная прокрутка
