@@ -408,8 +408,62 @@
       background-color: rgba($mainFontColor, 0.6);
     }
   }
-  
 
+  &.main--catalog {
+    background: url('../img/bg-page-10.jpg') 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-page-10-tablet.jpg') 0% 100% no-repeat ;
+      background-size: cover;
+    }
+    .main{
+      &__title{ 
+        margin-bottom: 120px;
+        
+      }
+      &__text {
+        margin-bottom: 104px;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;   
+      right: 0;
+      bottom: 0; 
+      background-color: rgba(#243F23, 0.3);
+    }
+  }
+  
+  &.main--contacts {
+    background: url('../img/bg-page-11.jpg') 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-page-11-tablet.jpg') 0% 100% no-repeat ;
+      background-size: cover;
+    }
+    .main{
+      &__title{ 
+        margin-bottom: 120px;
+        
+      }
+      &__text {
+        margin-bottom: 104px;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;   
+      right: 0;
+      bottom: 0; 
+      background-color: rgba(#243F23, 0.3);
+    }
+  }
 
 
   // .container {
@@ -466,7 +520,9 @@
 
 .catalog-menu {
   padding-top: 80px;
-
+  &.catalog__catalog-menu{
+    padding-top: 20px;  
+  }
   .title-block {
     @include flex(row, space-between, flex-start);
     flex-wrap: wrap;

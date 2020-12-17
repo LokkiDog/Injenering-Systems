@@ -1,0 +1,84 @@
+.contacts {
+  margin-top: 40px;
+  .container {
+    @include flex(row, space-between, center);
+    @media (max-width: $desktopWidth){
+      @include flex(column, center, center);
+      padding: 0;
+      margin: 0 auto;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &-info {
+    width: 100%;
+    max-width: fit-content;
+    margin: 0 auto;
+    @include flex(column, center,flex-start);
+    @media (max-width: $desktopWidth){
+      margin-bottom: 60px;
+    } 
+    @media (max-width: $phoneWidth){
+      margin-bottom: 40px;
+    } 
+
+    
+    
+  }
+  &-item {
+    @include flex(row, flex-start, center);
+    margin-bottom: 20px;
+    @media (max-width: $phoneWidth){
+      margin-bottom: 16px;
+    } 
+  }
+  &-icon {
+    width: 28px;
+    height: 28px;
+    @media (max-width: $phoneWidth){
+      width: 18px;
+      height: 18px;
+    } 
+  }
+  &-email {
+    a {
+      text-transform: uppercase;
+    }
+  }
+  &-value {
+    margin-left: 40px; 
+    @include link_a($mainFontColor, 500);
+    @media (max-width: $phoneWidth){
+      margin-left: 26px; 
+    } 
+    a {
+      color: $mainFontColor;
+      font-size: 18px;
+      @media (max-width: $phoneWidth){
+        font-size: 14px;
+      } 
+    }
+    
+  }
+
+
+
+  &-map {
+    @media (max-width: $desktopWidth){
+      width: 100%;
+    }  
+    @media (max-width: $phoneWidth){
+      height: 360px;
+    } 
+    &-img {
+      @media (max-width: $desktopWidth){
+        width: 100%;
+      }
+      @media (max-width: $phoneWidth){
+        height: 100%;
+        object-fit: cover;
+      } 
+    }
+  }
+  
+}
