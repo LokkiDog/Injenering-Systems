@@ -1,4 +1,8 @@
 .about-us {
+  margin-top: 40px;
+  @media (max-width: $tableWidth){
+    margin-top: 20px;
+  }
   &-wrapper {
     @include flex(row, space-between, center);
     flex-wrap: wrap;
@@ -46,7 +50,7 @@
   .title.about__title--h3{
     margin-top: 64px;
     font-size: rem(32);
-    font-weight: 500;
+    font-weight: 400;
   }
   
 }

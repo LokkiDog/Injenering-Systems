@@ -1,7 +1,15 @@
 .drainage {
   &-descr {
     margin-top: 73px;
+    margin-bottom: 66px;
+    @media   (max-width: $phoneWidth) {
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
     &.drainage-descr--bottom {
+      margin-top: 0;
+      margin-bottom: 0;
+
       max-width: 53%;
       @media (max-width: $desktopWidth){ 
         max-width: 75%;
@@ -13,8 +21,16 @@
   }
   &__table {
     margin-top: 26px;
+    tbody {
+      border-bottom: none;
+    }
+    .table-th-top {
+      font-weight: 400;
+    }
     .table-td:not(:first-child) {
       text-align: center;
+      width: 125px;
+      vertical-align: middle;
     }
   }
   &__devices-items {
@@ -23,18 +39,29 @@
     }
    .devices-items-image{
     position: relative;
-    &:after {
-      content: "";
+    &:after { 
+      content: url('../img/oval.png');
       position: absolute;
-      bottom: -124px;
+      transform: rotate(180deg);
+      bottom: -150px;
       right: 0;
       width: 100%;
       z-index: -1;
-      height: 49%;
-      background-color:$neutral-secondary;
-      border-radius: 100%;
+      height: 49%;  
+      opacity: 0.35;
+
+      
       @media (max-width: $desktopWidth){ 
+        content: "";
+        position: absolute;
         bottom: -186px;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+        height: 49%;
+        background-color:$neutral-secondary;
+        border-radius: 100%;
+        opacity: 1;
       }
     }
    }
@@ -44,7 +71,7 @@
 
 
 .example {
-  margin-top: 160px;
+  margin-top: 100px;
   @media   (max-width: $tableWidth) {
     margin-top: 20px;
   }

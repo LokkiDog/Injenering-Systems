@@ -24,88 +24,117 @@ table {
     }
   }
   tbody {
-    border-top: 2px solid #fff ;
-    border-bottom: 2px solid #fff ;
+    // border-top: 2px solid #fff ;
+    border-bottom: 2px solid #FAFAFA ;
+    
   }
   tbody tr:nth-child(n+1) {
     background-color: #F1F1F1;   
+    
   }
   tbody tr:nth-child(odd) {
     background-color:  #EAEAEA;   
+    @media   (max-width: $phoneWidth) {
+      background-color: #ffffff;   
+    }
   }
 }
 
-
-.table {
-  @include link_a($mainFontColor);
-  // &.table--catalog { }
-  &-item-name {
-    min-width: 160px;
-    line-height: rem(21);
-    @media   (max-width: $tableWidth) {
-      min-width: auto;
-    }
+table {
+  &.table {
+    @include link_a($mainFontColor);
   }
-  &-td {
-    font-size: rem(14);
-    line-height: rem(16);
-    &.table-td--three {
-      position: relative;
+   
+  .table {
+    
+    &-td {
+      font-size: rem(14);
+      line-height: rem(16);
+      &.table-td--three {
+        position: relative;
+      }
+      &:not(:last-child){
+        border-right: 2px solid #F1F1F1;
+      }
     }
-    &:not(:last-child){
-      border-right: 2px solid #fff;
+    &-item-name {
+      min-width: 160px;
+      line-height: rem(21);
+      font-size: rem(18);
+      @media   (max-width: $tableWidth) {
+        min-width: auto;
+      }
+      @media   (max-width: $phoneWidth) {
+        line-height: rem(16);
+        font-size: rem(14);
+      }
     }
-  }
-  &-th {
-    font-style: italic;
-    @media   (max-width: $tableWidth) {
-     font-size: 14px;
+    &-th {
+      font-style: italic;
+      @media   (max-width: $tableWidth) {
+        font-size: 14px;
+      }
     }
-  }
-  &-tr {
-    &.table-tr--green {
-      background-color: $success-color;
-      color: $default-color;
+    &-tr {
+      &.table-tr--green {
+        background-color: $success-color;
+        color: $default-color;
+        
+      }
     }
-  }
-  &-th-top {
-    padding: 7px 10px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: rem(18);
-    line-height: rem(21);
-    color: $mainFontColor;
-    background-color: #DCDFDF;
-
-  }
-  &-link {
-    @include flex(column, center, center);
-    vertical-align: middle;
-    // padding: 32px;
-    min-width: 172px;
-    text-decoration: underline;
-    font-size: rem(18);
-    &:hover {
-      text-decoration: none;
+    &-th-top {
+      padding: 7px 10px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: rem(18);
+      line-height: rem(21);
+      color: $mainFontColor;
+      background-color: #DCDFDF;
+  
     }
-    @media (max-width: $desktopWidth){ 
-      min-width: auto;
-      white-space: nowrap;
+    &-link {
+      // @include flex(column, center, center);
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      // padding: 32px;
+      min-width: 164px;
+      text-decoration: underline;
+      font-size: rem(18);
+      a {
+        font-style: italic;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+      @media (max-width: $desktopWidth){ 
+        min-width: auto;
+        white-space: nowrap;
+      }
+      @media   (max-width: $tableWidth) {
+        font-size: 12px;
+      }
     }
-    @media   (max-width: $tableWidth) {
-     font-size: 12px;
+    &-text-right { 
+      float: right;
+      line-height: 21px;
+      /* margin-left: auto; */
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: end;
+      @media   (max-width: $phoneWidth) {
+        margin-right: 8px;
+      }
     }
+    &-text-center{
+      width: 100%;
+      position: absolute;
+      bottom: 12px;
+      left: 0;
+      line-height: 21px;
+      text-align: center;
+    } 
   }
-  &-text-right {
-    float: right;
-    line-height: 21px;
-  }
-  &-text-center{
-    width: 100%;
-    position: absolute;
-    bottom: 12px;
-    left: 0;
-    line-height: 21px;
-    text-align: center;
-  }
+  
 }

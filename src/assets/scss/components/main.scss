@@ -11,7 +11,9 @@
   @media (max-width: $tableWidth){
     height: 480px;
   }
-  
+  &__text {
+    font-weight: 500;
+  }
   &.main--index {
     //background: url('../img/bg-page-index.jpg') 0% 0% no-repeat ;
     background-size: cover; 
@@ -92,7 +94,6 @@
       background: url('../img/bg-page-2-tablet.jpg') 71% 0% no-repeat ;
       background-size: cover; 
 
-      height: 780px;
       
       padding: initial;
     }
@@ -100,6 +101,10 @@
       &__title{
         @media (max-width: $tableWidth){
           margin-top: 180px;
+        }
+        @media (max-width: $phoneWidth){
+          margin-top: 0;
+          margin-bottom: 0;
         }
       }
       &-button-wrapper{
@@ -233,10 +238,14 @@
     }
     .main{
       &__title{
-        font-size: rem(50);
+        font-size: rem(43);
         margin-bottom: 120px;
         @media (max-width: $tableWidth) {
           font-size: 36px;
+        }
+        @media (max-width: $phoneWidth) {
+          font-size: 22px;
+          margin: 0;
         }
       }
     }
@@ -328,7 +337,7 @@
       left: 0;   
       right: 0;
       bottom: 0;
-      background-color: rgba(#243F23, 0.3);
+      background-color: rgba(#25233F, 0.3);
     }
   }
   &.main--deliver {
@@ -338,60 +347,13 @@
     .main{
       &__title{
         margin-bottom: 15px;
-      }
-      &__text {
-        margin-bottom: 104px;
-      }
-    }
-    &:before{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;   
-      right: 0;
-      bottom: 0;
-      background-color: rgba($mainFontColor, 0.6);
-    }
-  }
-  &.main--documentation {
-    background: url('../img/bg-service-2.jpg') 0% 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    @media (max-width: $desktopWidth){
-      background: url('../img/bg-service-2-tablet.jpg') 0% 100% no-repeat ;
-      background-size: cover;
-    }
-    .main{
-      &__title{
-        margin-bottom: 15px;
-      }
-      &__text {
-        margin-bottom: 104px;
-      }
-    }
-    &:before{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;   
-      right: 0;
-      bottom: 0;
-      background-color: rgba($mainFontColor, 0.6);
-    }
-  }
-  &.main--mounting {
-    background: url('../img/bg-service-3.jpg') 0% 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    @media (max-width: $desktopWidth){
-      background: url('../img/bg-service-3-tablet.jpg') 0% 100% no-repeat ;
-      background-size: cover;
-    }
-    .main{
-      &__title{
-        margin-bottom: 15px;
+        font-size: rem(58);
+        @media (max-width: $tableWidth){
+          font-size: 40px;  
+        }
         @media (max-width: $phoneWidth){
-          font-size: 31px;
+          font-size: 30px; 
+          margin-top: 15px;
         }
       }
       &__text {
@@ -405,7 +367,77 @@
       left: 0;   
       right: 0;
       bottom: 0;
-      background-color: rgba($mainFontColor, 0.6);
+      background-color: rgba(#243F23, 0.3);
+    }
+  }
+  &.main--documentation {
+    background: url('../img/bg-service-2.jpg') 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-service-2-tablet.jpg') 0% 100% no-repeat ;
+      background-size: cover;
+    }
+    .main{
+      &__title{
+        margin-bottom: 15px;
+        font-size: rem(58);
+        @media (max-width: $tableWidth){
+          font-size: 40px;  
+        }
+        @media (max-width: $phoneWidth){
+          font-size: 30px; 
+          margin-top: 15px;
+        }
+        
+      }
+      &__text {
+        margin-bottom: 104px;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;   
+      right: 0;
+      bottom: 0;
+      background-color: rgba(#243F23, 0.3);
+    }
+  }
+  &.main--mounting {
+    background: url('../img/bg-service-3.jpg') 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: $desktopWidth){
+      background: url('../img/bg-service-3-tablet.jpg') 0% 100% no-repeat ;
+      background-size: cover;
+    }
+    .main{
+      &__title{
+        margin-bottom: 15px;
+        font-size: rem(58);
+        @media (max-width: $tableWidth){
+          font-size: 40px;  
+        }
+        @media (max-width: $phoneWidth){
+          font-size: 30px; 
+          margin-top: 15px;
+        }
+
+      }
+      &__text {
+        margin-bottom: 104px;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;   
+      right: 0;
+      bottom: 0;
+      background-color: rgba($mainFontColor, 0.3);
     }
   }
 
@@ -536,6 +568,7 @@
   }
   &__text {
     max-width: 615px;
+    margin-top: 5px;
     @media (max-width: $desktopWidth){
       display: none;
     }
@@ -571,7 +604,7 @@
     width: 49%;
   }
   &:hover {
-    filter: grayscale(50%);
+    cursor: pointer;
     .menu-card-text {
       color: $success-color;
     }

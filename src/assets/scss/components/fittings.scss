@@ -1,6 +1,9 @@
 .fittings {
   &-descr {
     margin-top: 80px;
+    @media (max-width: $desktopWidth){
+      margin-top: 40px;
+    }
     @include flex(row, space-between, center);
     &-text{
       width: 75%;
@@ -98,30 +101,49 @@
         width: 75%;
       }
       &:before {
-        content: "";
+        content: url('../img/f-oval.png');
         position: absolute;
-        // top: -88px;
-        top: -124px;
+        top: -154px;
         right: 0;
         width: 100%;
         z-index: -1;
-        height: 39%;
-        background-color:$neutral-secondary;
-        border-radius: 100%;
-        @media (max-width: $desktopWidth){
-          top: -135px;
+        height: 49%;  
+        opacity: 0.35;
+  
+        
+        @media (max-width: $desktopWidth){ 
+          top: -138px; 
+          content: "";
+          height: 75%;  
+          position: absolute;     
+          background-color:$neutral-secondary;
+          border-radius: 100%;
+          opacity: 1;
         }
       }
-      &:after {
-        content: "";
+      &:after { 
+        content: url('../img/f-oval.png');
         position: absolute;
+        transform: rotate(180deg);
         bottom: -129px;
         right: 0;
         width: 100%;
         z-index: -1;
-        height: 44%;
-        background-color:$neutral-secondary;
-        border-radius: 100%;
+        height: 49%;  
+        opacity: 0.35;
+  
+        
+        @media (max-width: $desktopWidth){ 
+          content: "";
+          position: absolute;
+          bottom: -129px;
+          right: 0;
+          width: 100%;
+          z-index: -1;
+          height: 44%;
+          background-color:$neutral-secondary;
+          border-radius: 100%;
+        }
       }
     }
   }

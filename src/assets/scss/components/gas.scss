@@ -1,4 +1,9 @@
 .gas {
+  margin-top: 40px;
+  @media (max-width: $desktopWidth){
+    margin-top: 20px;
+  }
+
   &__title {
     margin-top: 80px;
     margin-bottom: 20px;
@@ -55,7 +60,7 @@
   }
   &-grey {
     background-color: #F1F1F1;
-    padding: 58px 40px;
+    padding: 60px 41px;
     width: 59%;
     &:not(:first-child){
       padding: 63px 40px;
@@ -90,6 +95,10 @@
         background-color: rgba(67, 173, 72, 0.7);
       }
     }
+    .table-td:not(:first-child) {
+      text-align: center;
+    }
+    
     &.gas__table--small{
       width: 34%;
       @media (max-width: $desktopWidth){

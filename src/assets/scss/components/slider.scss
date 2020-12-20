@@ -47,22 +47,22 @@
 
 // ----------------------------
 
-$time: 500ms;
+$time: 300ms;
 $delay: $time/2;
-$mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
+$mode: linear;
 @keyframes heartbeat {
   0% {
     transform: scale(0);
   }
-  25% {
-    transform: scale(1.2);
-  }
-  50% {
-    transform: scale(1);
-  }
-  75% {
-    transform: scale(1.2);
-  }
+  // 25% {
+  //   transform: scale(1.2);
+  // }
+  // 50% {
+  //   transform: scale(1);
+  // }
+  // 75% {
+  //   transform: scale(1.2);
+  // }
   100% {
     transform: scale(1);
   }
@@ -71,8 +71,10 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
 .slider-container {
   position: relative;
   margin: 0 auto;
-  width: 800px;
-  height: 600px;
+  // width: 800px;
+  // height: 600px;
+  width: 586px;
+    height: 440px;
   .bullet-container {
     position: absolute;
     bottom: 10px;
@@ -99,8 +101,10 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
     position: relative;
     left: 50%;
     top: 50%;
-    width: 70%;
-    height: 60%;
+    // width: 70%;
+    // height: 60%;
+    width: 96%;
+    height: 83%;
     transform: translate(-50%, -50%);
     .slider-single {
       position: absolute;
@@ -116,7 +120,7 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
         top: 0;
         width: 100%;
         height: 100%;
-        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+        // box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
         transition: $time $mode;
         transform: scale(0);
         opacity: 0;
@@ -133,7 +137,7 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
         font-weight: 600;
         font-family: "karla";
         border-radius: 5px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         transition: $time $mode;
         opacity: 0;
         &:hover,
@@ -169,7 +173,7 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
         //z-index: 0;
        
         .slider-single-image {
-          //opacity: 0;
+          opacity: 1;
           transform: translateX(-50%) scale(0);
         }
       }
@@ -182,11 +186,11 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
           bottom: 0;
           background-color: $mainFontColor;
           transform: translateX(-160%) scale(0.8);
-          opacity: 0.3;
+          opacity: 0.6;
         }
         // z-index: 1;
         .slider-single-image {
-          opacity: 0.3;
+          opacity: 1;
           transform: translateX(-60%) scale(0.8);
         }
         .slider-single-download {
@@ -209,11 +213,11 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
           bottom: 0;
           background-color: $mainFontColor;
           transform: translateX(-40%) scale(0.8);
-          opacity: 0.3;
+          opacity: 0.6;
         }
         .slider-single-image {
           
-          opacity: 0.3;
+          opacity: 1;
           transform: translateX(60%) scale(0.8);
         }
         .slider-single-download {
@@ -292,8 +296,8 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
     transition: all 0.2s;
     transform: rotate(180deg);
     position: absolute;
-    left: calc(50% - 40px);
-    bottom: 60px;
+    left: calc(50% - 30px);
+    bottom: 30px;
     display: block;
     transform: translateY(-50%); 
     &:hover {
@@ -307,8 +311,8 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
     filter: grayscale(100%);
     transition: all 0.2s;
     position: absolute;
-    right: calc(50% - 40px);
-    bottom: 60px;
+    right: calc(50% - 30px);
+    bottom: 30px;
     display: block; 
 
     &:hover {

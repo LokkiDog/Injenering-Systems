@@ -6,7 +6,7 @@
 
 
 html {
-  line-height: $mainLineHeight;
+  line-height: 21.09px;
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
@@ -117,6 +117,7 @@ section,
 }
 .text { 
   color: $mainFontColor;
+  line-height: 21.09px;
   &.text--white {
     color: $default-color;
   }
@@ -148,11 +149,11 @@ section,
 .ul {
   .li {
     position: relative;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     &:before {
       content: '';
       position: absolute;
-      left: -18px;
+      left: -22px;
       top: 8px;
       width: 5px;
       height: 5px;

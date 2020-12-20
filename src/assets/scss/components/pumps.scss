@@ -1,6 +1,9 @@
 .pumps {
   &-descr {
-    margin-top: 60px;
+    margin-top: 80px;
+    @media (max-width: $desktopWidth){
+      margin-top: 40px;
+    }
   }
   &-types {
     &-wrapper {
@@ -27,35 +30,78 @@
         margin-bottom: 40px;
       }
     }
-    .devices-items-image {
-      &:before {
-        content: "";
-        position: absolute;
-        top: -88px;
-        right: 0;
+    .devices-items-info {
+      width: 54%;
+      @media   (max-width: $tableWidth) {
         width: 100%;
-        z-index: -1;
-        height: 39%;
-        background-color:$neutral-secondary;
-        border-radius: 100%;
       }
-      &:after {
-        content: "";
+    }
+    .devices-items-image {
+      width: 44%;
+      @media   (max-width: $tableWidth) {
+        width: 100%;
+      }
+      &:before { 
+        content: url('../img/p-oval.png');
         position: absolute;
-        bottom: -200px;
         right: 0;
         width: 100%;
         z-index: -1;
-        height: 44%;
-        background-color:$neutral-secondary;
-        border-radius: 100%;
+        height: 49%;  
+        opacity: 0.35;
+        top: -136px;
+        @media (max-width: $desktopWidth){ 
+          content: "";
+          position: absolute;
+          top: -100px;
+          right: 0;
+          width: 100%;
+          z-index: -1;
+          height: 59%;
+          background-color:$neutral-secondary;
+          border-radius: 100%;
+          opacity: 1;
+
+        }
+      }
+      &:after { 
+        content: url('../img/p-oval.png');
+        position: absolute;
+        transform: rotate(180deg);
+        bottom: -290px;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+        height: 49%;  
+        opacity: 0.35;
+  
+        
+        @media (max-width: $desktopWidth){ 
+          content: "";
+          position: absolute;
+          bottom: -200px;
+          right: 0;
+          width: 100%;
+          z-index: -1;
+          height: 44%;
+          background-color:$neutral-secondary;
+          border-radius: 100%;
+          opacity: 1;
+
+        }
       }
     }
   }
   &__partners {
-    margin-top: 60px;
-    @media   (max-width: $tableWidth) {
-      margin-top: 0;
+    margin-top: 40px;
+    @media   (max-width: $desktopWidth) {
+      margin-top: 20px;
+    }
+ 
+    .img-links-row--partners .img-links-a {
+      @media   (max-width: $tableWidth) {
+        margin-right: 5px;
+      }
     }
   }
 }

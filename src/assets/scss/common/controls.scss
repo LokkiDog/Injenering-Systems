@@ -55,6 +55,10 @@ input, textarea {
     font-size: 14px;
     line-height: 16px;
     color: $neutral-placeholder;
+    @include link_a(inherit);
+    a {
+      text-decoration: underline;
+    }
     @media (max-width: $desktopWidth){
       text-align: left;
     }

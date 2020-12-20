@@ -1,16 +1,21 @@
 .accordion {
-  background-color: rgba(190, 190, 190, 0.4);;
+  background-color: rgba(190, 190, 190, 0.4);
   color: $mainFontColor;
   cursor: pointer;
-  padding: 20px;
+  padding: 13px 20px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: rem(36);
+  font-size: rem(24);
+  line-height: rem(26);
   transition: 0.4s;
   position: relative;
   border-radius: 5px;
+  @media (max-width: $phoneWidth){ 
+    font-size: 16px ;
+    line-height: 18px;
+  }
   &-arrow {
     @include flex(row, center,center);
     position: absolute;
@@ -20,13 +25,23 @@
     right: 35px;
 
     transform: rotate(180deg);
-    transition: all 0.4s;
+    transition: all 0.3s;
+    @media (max-width: $phoneWidth){ 
+      width: 20px;
+      right: 22px;
+     }
   }
 }
 
 .qlists {
-
-  .active, .accordion:hover {
+  margin-top: 80px;
+  @media   (max-width: $desktopWidth) {
+    margin-top: 43px;
+  }
+  @media (max-width: $tableWidth){ 
+   margin-top: 20px;
+  }
+  .accordion:hover {
     background-color: #ccc;
   }
 }
@@ -40,10 +55,13 @@
     @include flex(row, space-between, center);
     @include link_a($mainFontColor);
     background: rgba(190, 190, 190, 0.2);
-    padding: 9px 35px;
+    padding: 10px 40px;
     margin-bottom: 2px;
+    @media   (max-width: $desktopWidth) {
+      padding: 10px 20px; 
+    }
     @media   (max-width: $tableWidth) {
-      padding: 9px 4px;
+      padding: 10px 12px;
     }
     &:last-child{
       border-bottom-left-radius: 3px;    
@@ -51,24 +69,47 @@
     }
   }
   &-name {
+    font-weight: 700;
     font-size: rem(18);
     line-height: rem(21);
     width: 25%;
+    @media   (max-width: $desktopWidth) {
+      font-weight: 400;
+      width: 28%;
+      align-self: flex-start;
+    }
     @media   (max-width: $tableWidth) {
       width: 35%;
-      font-size: rem(16);
-    }
+      font-size: 14px;
+      line-height: 16px; 
+      align-self:flex-start;
+      font-weight: normal;
+      width: 86%;
+    } 
   }
   &-text {
     text-align: left;
-    font-size: rem(14); 
+    font-size: rem(18); 
     width: 60%;
+    @media   (max-width: $desktopWidth) {
+      padding: 0 10px;
+      font-size: 14px;
+      line-height: 16px; 
+    }
+    @media   (max-width: $tableWidth) {
+      display: none;
+    } 
   }
   &-link {
     text-decoration: underline;
     width: 110px;
     font-size: rem(18);
     font-style: italic;
+    @media   (max-width: $desktopWidth) {
+      font-size: 14px;
+      line-height: 16px; 
+      width: 85px;
+    }
     @media   (max-width: $tableWidth) {
       width: 35%;
       font-size: rem(16);

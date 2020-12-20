@@ -3,3 +3,11 @@
     padding-top: 28px;
   }
 }
+
+.deliver,
+.documentation,
+.mounting {
+  @media   (max-width: $tableWidth) {
+    margin-top: 20px;
+  }
+}

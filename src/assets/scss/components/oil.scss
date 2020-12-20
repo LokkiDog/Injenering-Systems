@@ -1,10 +1,13 @@
 .oil {
   &__title {
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 60px; 
+    &.nmt{
+      margin-top: 0;
+    }
     
     &.oil__title--first { 
-      margin-top: 80px;
+      margin-top: 40px;
       @media (max-width: $desktopWidth){
         margin-top: 40px;
       }
@@ -18,8 +21,8 @@
     margin-bottom: 20px;
   }
   &__ul {
-    margin-top: 10px;
-    margin-left: 26px;
+    margin-top: 20px;
+    margin-left: 40px;
   }
   &-double {
     @include flex(row, space-between, flex-start);
@@ -32,6 +35,11 @@
     width: 49%;
     @media (max-width: $desktopWidth){ 
       width: 100%;
+    }
+  }
+  &-right {
+    @media (max-width: $phoneWidth){ 
+      margin-top: 20px;
     }
   }
   &-img {
