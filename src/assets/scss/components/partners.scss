@@ -25,9 +25,22 @@
   .img-links-a {
     
     .img-links-img {
-      max-height: 60px;
+      max-height: 48px;
       @media   (max-width: $desktopWidth) {
         max-height: 38px;
+      }
+
+      &.mh40{
+        max-height: 40px;
+      }
+      &.mh60 {
+        max-height: 60px;    
+      }
+      &.mr200 {
+        margin-right: 170px;
+        @media   (max-width: $desktopWidth) {
+          margin-right: 38px;
+        }
       }
     }
     
@@ -105,7 +118,7 @@
       flex-wrap: wrap;
     }
     .img-links-a {
-      margin-right: 0;
+      margin-right: 35px;
       .img-links-img {
         @media   (max-width: $tableWidth) {
           max-height: 30px;
@@ -117,6 +130,16 @@
       @media   (max-width: $tableWidth) {
         margin-right: 10px;
       }
+    }
+  }
+  .img-links-row--partners {
+    .img-links-a {
+      margin-right: 35px;
+      &:last-child{
+        margin-right: 0;
+      } 
+
+      
     }
   }
   .img-links-row--wrap {

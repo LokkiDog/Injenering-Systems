@@ -16,6 +16,15 @@ table {
     @media   (max-width: $tableWidth) {
       white-space: normal; 
     }
+
+  }
+  thead {
+      th{
+        &:not(:first-child){
+          vertical-align: middle;
+          text-align: center;
+        }
+      }
   }
   td {
     padding: 12px 14px;
@@ -25,7 +34,7 @@ table {
   }
   tbody {
     // border-top: 2px solid #fff ;
-    border-bottom: 2px solid #FAFAFA ;
+    border-bottom: 2px solid #F1F1F1 ;
     
   }
   tbody tr:nth-child(n+1) {
@@ -70,7 +79,9 @@ table {
       }
     }
     &-th {
+      
       font-style: italic;
+      
       @media   (max-width: $tableWidth) {
         font-size: 14px;
       }
@@ -100,7 +111,7 @@ table {
       // padding: 32px;
       min-width: 164px;
       text-decoration: underline;
-      font-size: rem(18);
+      font-size: 14px;
       a {
         font-style: italic;
       }

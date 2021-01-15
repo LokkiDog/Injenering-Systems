@@ -206,7 +206,22 @@
         display: none;
       }
     }
-    
+    &-text {
+      position: absolute;
+      bottom: 108px;
+      right: 59px;
+      text-align: right; 
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px; 
+      text-align: right;
+
+      color: #233F3F;
+      @media (max-width: $desktopWidth){ 
+        display: none;
+      }
+    }
   }
   &__table {
     margin-top: 20px;

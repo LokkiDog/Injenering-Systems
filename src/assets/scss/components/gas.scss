@@ -97,6 +97,8 @@
     }
     .table-td:not(:first-child) {
       text-align: center;
+      font-size: 18px;
+      line-height: 21px;
     }
     
     &.gas__table--small{
@@ -107,6 +109,7 @@
       }
       .table-item-name {
         width: 33%;
+        height: 46px;
       }
     }
     &.gas__table--big{
