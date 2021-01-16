@@ -90,13 +90,68 @@ $.fn.setCursorPosition = function(pos) {
   }
 };
 
-$('input[name="phone"]').click(function(){
+$('input[name="phone"]').on("focus", function(){
   $(this).setCursorPosition(3);
-}).mask("+7(999) 999-9999");
-$("#center_not_ok").mask("+7(999) 999-9999"); 
-
+}).inputmask({"mask": "+7(999) 999-9999"});
+$("#center_not_ok").inputmask({"mask": "(999) 999-9999"});  
 // ---------------------------
 
+function validate_form(form){
+  var phone     = form.find('input[name="phone"]');
+      fio       = form.find('input[name="name"]'); 
+      email     = form.find('input[name="email"]'); 
+      ckeckbock = form.find('input[type="checkbox"]'); 
+      
+  if (fio.val().length < 2){
+    fio.css('border-color', 'red');
+    return false;
+  }else {
+    fio.css('border-color', '#43ad48'); 
+  }
+  
+  if (!phone.inputmask("isComplete")){
+    phone.css('border-color', 'red');
+    return  false;
+  }else {
+    phone.css('border-color', '#43ad48');
+  }
+
+  if (email.val().length < 5 || email.val().indexOf("@") == -1){
+    email.css('border-color', 'red');
+    return false;
+  }else {
+    email.css('border-color', '#43ad48');
+  }
+
+  if (!ckeckbock.prop('checked')){
+    ckeckbock.siblings('span').css('color', 'red');
+    return false;
+  }else {
+    ckeckbock.siblings('span').css('color', '#43ad48');
+  }
+  
+  fio.css('border-color', '#bebebe');
+  phone.css('border-color', '#bebebe');
+  email.css('border-color', '#bebebe');
+  ckeckbock.siblings('span').css('color', '#bebebe');
+  return true;
+}
+
+$('button[type=submit]').on("click", function(e){ 
+  e.preventDefault(); 
+  var form = $(this).parents('form');
+      message_box = form.find('.form-message'); 
+
+  if(validate_form(form)){
+    form.submit();
+    message_box.text("Форма успешно отправлена");
+    message_box.css('color','#43ad48');
+
+  }else{
+    message_box.text("Одно или несколько полей заполнены неверно");
+    message_box.css('color','red');
+  }
+})
 
 /*
 ------------------------------

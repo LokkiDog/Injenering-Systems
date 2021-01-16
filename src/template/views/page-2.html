@@ -713,10 +713,10 @@
 
               <h2 class="title title--h2 form-block__title">Оставить заявку</h2>
               
-              <form action="" method="POST" class="form form-block__form">
+              <form action="#" method="POST" class="form form-block__form">
                 <div class="form-block-inputs">
                   <input class="input form__input" type="text" name="name" placeholder="Ваше имя">
-                  <input class="input form__input" type="tel" name="phone" placeholder="8 (888) 888-88-88">
+                  <input class="input form__input" type="tel" name="phone" placeholder="+7 (777) 777-77-77">
                   <input class="input form__input" type="email" name="email" placeholder="Электронный адрес">
                 </div>
                 <textarea class="textarea form__textarea form-block-textarea" type="text" name="comment" placeholder="Комментарий"></textarea>
@@ -725,7 +725,7 @@
                 <div class="form-block-controls">
 
                   <label class="checkbox form-block-controls__checkbox">
-                    <input class="checkbox-input" type="checkbox">
+                    <input class="checkbox-input" type="checkbox" required>
                     <span class="checkbox-text">
                       Вы согласны на обработку <a href="policy.html">персональных данных</a>
                     </span>
@@ -741,11 +741,14 @@
                       </label>
                     </div>
                     
-                    <input type="submit" class="btn btn-success form-block__btn" />
+                    <!-- <button type="submit" class="btn btn-success form-block__btn" >Отпарвить</button> -->
+                    <button type="submit" class="btn btn-success form-block__btn" >Отпарвить</button>
                   </div>
 
                 </div>
                 <!-- /.form-block-btns --> 
+
+                <div class="form-message"></div>
               </form>
 
             </div>
@@ -871,8 +874,7 @@
           <form action="" method="post" class="modal__form form" id="modalForm">
             <input type="text" name="name" class="input modal__input" placeholder="Ваше имя">
             <input type="tel" name="phone" class="input modal__input" placeholder="8 (888) 888 88 88">
-            <input type="submit" class="btn btn-success modal__btn" value="Отправить">
-            
+            <input type="submit" class="btn btn-success modal__btn" value="Отправить"> 
           </form>
           <div class="cross" id="cross">
             &#10006;

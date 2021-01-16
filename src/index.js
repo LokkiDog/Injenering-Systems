@@ -13,7 +13,8 @@ global.$ = $;
 // import 'swiper'; 
 import 'swiper/swiper-bundle.css';
 
-import './js/jquery.maskedinput.min.js' 
+// import './js/jquery.maskedinput.min.js' 
+import './js/jquery.inputmask.min.js' 
 
 
 // import 'vue'
