@@ -44,6 +44,14 @@
         width: 100%;
       }
     }
+
+    &.form-block-controls--modal {
+      .form-block-controls {
+        &__checkbox{
+          width: 100%;
+        }
+      }
+    }
   }
   &-textarea {
     width: 49%;

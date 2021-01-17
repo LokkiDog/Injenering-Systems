@@ -115,14 +115,14 @@ function validate_form(form){
   }else {
     phone.css('border-color', '#43ad48');
   }
-
-  if (email.val().length < 5 || email.val().indexOf("@") == -1){
-    email.css('border-color', 'red');
-    return false;
-  }else {
-    email.css('border-color', '#43ad48');
+  if (email.length > 0) { 
+    if ( email.val().length < 5 || email.val().indexOf("@") == -1){
+      email.css('border-color', 'red');
+      return false;
+    }else {
+      email.css('border-color', '#43ad48');
+    }
   }
-
   if (!ckeckbock.prop('checked')){
     ckeckbock.siblings('span').css('color', 'red');
     return false;
