@@ -17,8 +17,14 @@
   
   .img-links-row {
     margin-top: 60px;
+    @media   (max-width: $desktopWidth ) {
+      margin-top: 50px;
+      margin-bottom: 80px;
+  }
     @media   (max-width: $tableWidth) {
         margin-top: 20px; 
+        margin-bottom: 20px;
+
     }
   }
 
